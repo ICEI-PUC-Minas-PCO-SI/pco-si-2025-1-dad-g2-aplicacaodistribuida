@@ -1,6 +1,6 @@
 # Título do Projeto
 
-`CURSO: Análise e Desenvolvimento de Sistemas`
+`CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Desenvolvimento de Aplicações Distribuídas`
 
@@ -8,16 +8,16 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Gustavo Rafá Pinheiro da Silva
+* Igor Alvarenga Nunes de Brito
+* Jean Estanislau de Souza Guimarães
+* João Vitor de Souza França
+* Otávio Soares da Costa
+* Pedro Henrique Morais de Assis
 
 ## Orientador
 
-* Nome completo do professor 1
+* Kleber Jacques Ferreira de Souza
 
 # Planejamento
 
