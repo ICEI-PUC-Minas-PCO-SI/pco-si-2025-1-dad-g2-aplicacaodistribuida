@@ -4,7 +4,7 @@
 
 `DISCIPLINA: Desenvolvimento de Aplicações Distribuídas`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto da Aplicação de Lista de Compras Compartilhada visa resolver o problema de gestão de compras em grupo, comum entre famílias ou colegas de casa. A ideia é desenvolver um aplicativo onde várias pessoas possam interagir com uma lista de compras de forma colaborativa. Elas podem adicionar itens à lista e marcar os itens como comprados em tempo real, garantindo que todos os participantes estejam atualizados sobre o progresso da compra.
 
 ## Integrantes
 
