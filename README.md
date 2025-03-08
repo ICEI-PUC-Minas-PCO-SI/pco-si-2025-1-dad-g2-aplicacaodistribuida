@@ -1,10 +1,10 @@
-# Título do Projeto
+# CompraSync
 
 `CURSO: Sistemas de Informação`
 
 `DISCIPLINA: Desenvolvimento de Aplicações Distribuídas`
 
-O projeto da Aplicação de Lista de Compras Compartilhada visa resolver o problema de gestão de compras em grupo, comum entre famílias ou colegas de casa. A ideia é desenvolver um aplicativo onde várias pessoas possam interagir com uma lista de compras de forma colaborativa. Elas podem adicionar itens à lista e marcar os itens como comprados em tempo real, garantindo que todos os participantes estejam atualizados sobre o progresso da compra.
+O projeto CompraSync (Aplicação de Lista de Compras Compartilhada) visa resolver o problema de gestão de compras em grupo, comum entre famílias ou colegas de casa. A ideia é desenvolver um aplicativo onde várias pessoas possam interagir com uma lista de compras de forma colaborativa. Elas podem adicionar itens à lista e marcar os itens como comprados em tempo real, garantindo que todos os participantes estejam atualizados sobre o progresso da compra.
 
 ## Integrantes
 
