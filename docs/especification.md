@@ -95,20 +95,25 @@ Conhecimento Prévio: Usuários com conhecimento intermediário a avançado em t
 Relação com a Tecnologia: Este público está bastante familiarizado com plataformas digitais, smartphones e redes sociais. Costumam ser ávidos por novas soluções tecnológicas que tragam praticidade ao dia a dia.
 Comportamento: Participam de eventos sociais como festas, churrascos e encontros com amigos e familiares. Buscam conveniência e formas de economizar, utilizando a tecnologia para facilitar a organização de compras em grupo.
 Motivação: Valorizam a praticidade, economia e a interação social que a plataforma oferece. A sincronia em tempo real e a facilidade de comparação de itens são aspectos que atraem esse grupo.
+
 Perfil 2: Famílias (35 a 55 anos)
 
 Conhecimento Prévio: Familiaridade moderada com tecnologia, utilizando principalmente smartphones para funções básicas, como comunicação e compras online.
 Relação com a Tecnologia: Embora não sejam especialistas em tecnologia, esse público utiliza com frequência aplicativos para facilitar a vida cotidiana, como bancos digitais e apps de compras.
 Comportamento: Participam de eventos familiares, como festas de aniversário, churrascos e outras confraternizações, onde é comum organizar compras em grupo para economizar.
 Motivação: Buscam ferramentas que ajudem a organizar melhor suas compras em grupo, especialmente quando há vários membros envolvidos. A praticidade de ter uma lista de compras compartilhada e a possibilidade de atualizar em tempo real são características valorizadas.
+
 Perfil 3: Grupos de Trabalho e Amigos (20 a 40 anos)
 
 Conhecimento Prévio: Usuários com bom conhecimento de tecnologia, muitos dos quais são usuários regulares de aplicativos para colaboração, como WhatsApp, Google Drive, entre outros.
 Relação com a Tecnologia: São entusiastas de novas tecnologias e buscam soluções eficientes para gerenciar tarefas em grupo. Muitas vezes, realizam compras coletivas para eventos de trabalho ou viagens.
 Comportamento: Organizam compras para eventos ou viagens em grupo, e desejam ter um controle mais eficiente sobre os itens adquiridos, com possibilidade de comunicação em tempo real.
 Motivação: A principal motivação é a organização eficiente e a eliminação de erros ou duplicações nas compras. A experiência de colaboração e a visibilidade clara dos itens adquiridos são essenciais para esse grupo.
+
+
 2. Mapeamento de Stakeholders
 O mapeamento de stakeholders é uma ferramenta importante para identificar todas as partes envolvidas e interessadas no sucesso da aplicação. No caso do Comprasync, os stakeholders são variados, e é importante entender suas expectativas para que a plataforma atenda de maneira eficaz.
+
 
 Usuários Finais (Consumidores):
 
@@ -126,6 +131,8 @@ Investidores e Parceiros Comerciais:
 
 Expectativa: Obter retorno financeiro a partir da adoção da plataforma e parcerias com empresas de varejo.
 Interesse: Garantir a sustentabilidade financeira do projeto, por meio de parcerias estratégicas com marcas e promoções exclusivas.
+
+
 3. Diagramas de Personas
 O conceito de personas será utilizado para ilustrar melhor os perfis dos usuários do Comprasync. Seguem os três principais perfis:
 
