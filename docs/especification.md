@@ -34,24 +34,23 @@ A **Introdução** consiste das etapas: *Contextualização -- Definição do pr
 
 A Contextualização deve situar sem projeto em um determinado contexto de mercado, a fim de fornecer informações adicionais que possam ajudar a entender melhor o assunto que você irá abordar. Serve também para definir a relevância do seu assunto, uma vez que mostra o tamanho do mercado em que se está inserido. Ela pode envolver a análise de vários aspectos, como o ambiente histórico, cultural, político e social em que o problema a ser atacado surgiu.
 
-Escreva de 2 a 3 parágrafos para contetualizar o seu projeto.
 
 ## Problema
 Atualmente, os consumidores enfrentam dificuldades ao tentar organizar compras em grupo de forma eficiente e colaborativa. A falta de uma plataforma que permita a sincronia e a atualização em tempo real das listas de compras gera confusão e desorganização. A ausência de uma ferramenta que facilite a visualização e comparação de itens comprados entre diferentes usuários resulta em uma experiência de compra fragmentada e pouco prática.
 
 Essa aplicação será usada em contextos diversos, desde pequenos grupos de amigos fazendo compras para um churrasco até grandes famílias organizando compras semanais. O Comprasync pretende utilizar tecnologias de nuvem para garantir a atualização em tempo real e proporcionar uma experiência de usuário fluida e intuitiva. Além disso, o desenvolvimento da aplicação se beneficiará de metodologias como o Design Thinking, que permite um olhar de ponta a ponta para o problema, garantindo que a solução atenda às reais necessidades dos usuários.
 
+As principais dificuldades incluem:
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+- Falta de Sincronização em Tempo Real: Muitos consumidores utilizam ferramentas tradicionais, como planilhas ou listas de aplicativos de compras, para organizar suas compras. No entanto, essas ferramentas não oferecem a capacidade de atualização em tempo real, o que resulta em informações desatualizadas e duplicação de itens. Isso gera confusão, atrasa o processo de compra e pode até levar a erros no planejamento da compra.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+- Desorganização nas Listas de Compras: Quando várias pessoas estão envolvidas no processo de compra, é comum haver falhas na comunicação. Alguns itens podem ser comprados por mais de uma pessoa, enquanto outros são esquecidos. A falta de clareza sobre o que já foi adquirido por outros participantes resulta em listas de compras desorganizadas e ineficientes.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+- Dificuldade de Comparação de Itens: Os consumidores geralmente desejam comparar preços e identificar quais itens foram comprados, por quem e em qual quantidade. No entanto, os aplicativos existentes não oferecem uma forma intuitiva e eficiente de comparar essas informações entre os membros do grupo, tornando o processo de coordenação mais complexo e menos eficiente.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+- Experiência Fragmentada de Compra: Muitas ferramentas de listas de compras não são projetadas para promover a interação e a colaboração entre os membros do grupo. Como resultado, a experiência de compra em grupo acaba sendo fragmentada, com pouca comunicação e pouca integração entre as partes envolvidas.
+
+
 
 ## Objetivos
 
@@ -70,34 +69,86 @@ Experiência de Compra Social: Desenvolver características que incentivem a int
 Acessibilidade e Usabilidade: Garantir que a interface da aplicação seja intuitiva e fácil de usar, proporcionando acessibilidade para todos os tipos de usuários, independentemente de sua familiaridade com a tecnologia.
 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O Comprasync nasce da identificação de uma lacuna significativa no mercado de consumo colaborativo. Embora as compras em grupo sejam uma prática comum, as ferramentas existentes não atendem adequadamente às necessidades de sincronização em tempo real, comparação de itens e organização eficaz. Ao focar na experiência do usuário, o Comprasync visa transformar a maneira como as pessoas fazem compras coletivas, tornando o processo mais eficiente e colaborativo.
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+Crescimento do Consumo Colaborativo:
+O consumo colaborativo tem se expandido no Brasil, especialmente em eventos sociais e compras familiares. De acordo com um estudo da Kantar (2020), 56% dos brasileiros já realizaram compras coletivas, e esse número tende a crescer. A necessidade de uma plataforma que ajude a organizar compras em grupo de forma eficiente é evidente, e o Comprasync foi desenvolvido para atender a essa demanda, proporcionando uma experiência de compra sem erros e com maior economia.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Impacto na Vida dos Usuários:
+Sem uma ferramenta eficaz, os consumidores enfrentam frustrações com a duplicação de itens, compras esquecidas e dificuldades de comunicação. Isso não só gera perda de tempo e esforço, mas também pode resultar em custos adicionais. Um estudo da PwC revelou que 73% dos consumidores brasileiros ficam frustrados quando o processo de compra não é rápido e eficiente. A criação do Comprasync visa resolver esses problemas, oferecendo uma plataforma organizada e fácil de usar, que melhora a qualidade da experiência de compra.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Benefícios para o Mercado:
+O Comprasync também oferece uma oportunidade de monetização através de parcerias com supermercados e marcas. Promoções exclusivas podem ser oferecidas aos usuários, criando uma relação vantajosa para todos os envolvidos. A plataforma pode ser um canal importante para varejistas e marcas que buscam atingir consumidores de forma mais direta e personalizada.
+
+Aprimoramento da Experiência do Usuário:
+O desenvolvimento do Comprasync leva em consideração as necessidades reais dos consumidores, como a sincronia em tempo real, a comparação de itens e a interação social. Estudos realizados com consumidores mostraram que 62% enfrentam dificuldades em manter as listas atualizadas, 54% mencionaram que ocorrem duplicações de itens e 72% gostariam de uma ferramenta para comparar itens. Essas informações ajudaram a moldar as funcionalidades da plataforma, garantindo que ela atenda às expectativas e resolva os problemas mais urgentes dos usuários.
 
 ## Público-Alvo
+O Comprasync é uma aplicação voltada para pessoas que desejam realizar compras em grupo de forma mais organizada, eficiente e colaborativa. O público-alvo da aplicação inclui consumidores que participam frequentemente de eventos sociais como festas, churrascos e reuniões familiares, além de grupos que buscam economizar realizando compras coletivas. A seguir, vamos descrever os diferentes perfis de usuários que utilizarão a plataforma, destacando os conhecimentos prévios, a relação com a tecnologia e outros aspectos relevantes.
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+1. Perfis de Usuários
+Perfil 1: Jovens Adultos (18 a 35 anos)
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Conhecimento Prévio: Usuários com conhecimento intermediário a avançado em tecnologia, que usam frequentemente aplicativos para organizar suas compras e interagir com outras pessoas de forma online.
+Relação com a Tecnologia: Este público está bastante familiarizado com plataformas digitais, smartphones e redes sociais. Costumam ser ávidos por novas soluções tecnológicas que tragam praticidade ao dia a dia.
+Comportamento: Participam de eventos sociais como festas, churrascos e encontros com amigos e familiares. Buscam conveniência e formas de economizar, utilizando a tecnologia para facilitar a organização de compras em grupo.
+Motivação: Valorizam a praticidade, economia e a interação social que a plataforma oferece. A sincronia em tempo real e a facilidade de comparação de itens são aspectos que atraem esse grupo.
+Perfil 2: Famílias (35 a 55 anos)
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Conhecimento Prévio: Familiaridade moderada com tecnologia, utilizando principalmente smartphones para funções básicas, como comunicação e compras online.
+Relação com a Tecnologia: Embora não sejam especialistas em tecnologia, esse público utiliza com frequência aplicativos para facilitar a vida cotidiana, como bancos digitais e apps de compras.
+Comportamento: Participam de eventos familiares, como festas de aniversário, churrascos e outras confraternizações, onde é comum organizar compras em grupo para economizar.
+Motivação: Buscam ferramentas que ajudem a organizar melhor suas compras em grupo, especialmente quando há vários membros envolvidos. A praticidade de ter uma lista de compras compartilhada e a possibilidade de atualizar em tempo real são características valorizadas.
+Perfil 3: Grupos de Trabalho e Amigos (20 a 40 anos)
 
+Conhecimento Prévio: Usuários com bom conhecimento de tecnologia, muitos dos quais são usuários regulares de aplicativos para colaboração, como WhatsApp, Google Drive, entre outros.
+Relação com a Tecnologia: São entusiastas de novas tecnologias e buscam soluções eficientes para gerenciar tarefas em grupo. Muitas vezes, realizam compras coletivas para eventos de trabalho ou viagens.
+Comportamento: Organizam compras para eventos ou viagens em grupo, e desejam ter um controle mais eficiente sobre os itens adquiridos, com possibilidade de comunicação em tempo real.
+Motivação: A principal motivação é a organização eficiente e a eliminação de erros ou duplicações nas compras. A experiência de colaboração e a visibilidade clara dos itens adquiridos são essenciais para esse grupo.
+2. Mapeamento de Stakeholders
+O mapeamento de stakeholders é uma ferramenta importante para identificar todas as partes envolvidas e interessadas no sucesso da aplicação. No caso do Comprasync, os stakeholders são variados, e é importante entender suas expectativas para que a plataforma atenda de maneira eficaz.
+
+Usuários Finais (Consumidores):
+
+Expectativa: Ter uma ferramenta que permita organizar compras em grupo de maneira prática e eficiente.
+Interesse: Buscar uma solução que ofereça praticidade, economia e facilite a colaboração em tempo real.
+Supermercados e Lojas Parceiras:
+
+Expectativa: Parcerias comerciais que permitam divulgar ofertas e promoções para os usuários da plataforma.
+Interesse: Atração de consumidores que buscam ofertas em grupo e potencial de vendas por meio de promoções.
+Desenvolvedores e Designers:
+
+Expectativa: Criar uma plataforma intuitiva e funcional, que atenda às necessidades dos usuários.
+Interesse: Desenvolver uma interface de fácil uso e que seja compatível com dispositivos móveis, garantindo a melhor experiência para o usuário.
+Investidores e Parceiros Comerciais:
+
+Expectativa: Obter retorno financeiro a partir da adoção da plataforma e parcerias com empresas de varejo.
+Interesse: Garantir a sustentabilidade financeira do projeto, por meio de parcerias estratégicas com marcas e promoções exclusivas.
+3. Diagramas de Personas
+O conceito de personas será utilizado para ilustrar melhor os perfis dos usuários do Comprasync. Seguem os três principais perfis:
+
+Persona 1: João, o Jovem Adulto
+
+Idade: 28 anos
+Profissão: Designer gráfico
+Hobbies: Festas com amigos, viagens e eventos sociais.
+Objetivos: Organizar compras para eventos com amigos e garantir que todos participem sem duplicar itens. Gosta de praticidade e soluções digitais.
+Persona 2: Ana, a Mãe Organizada
+
+Idade: 42 anos
+Profissão: Professora
+Hobbies: Reuniões familiares, organização de eventos e convivência social.
+Objetivos: Planejar compras de alimentos e bebidas para grandes encontros familiares de forma eficiente e sem erros.
+Persona 3: Ricardo, o Amigo Colaborador
+
+Idade: 35 anos
+Profissão: Analista de TI
+Hobbies: Viagens com amigos, eventos esportivos e confraternizações.
+Objetivos: Coordenar compras de última hora para viagens em grupo ou festas, garantindo que todos saibam o que foi comprado e evitando que itens sejam comprados em duplicidade.
+
+O público-alvo do Comprasync é formado por uma diversidade de perfis que buscam otimizar a experiência de compras em grupo, seja para eventos sociais, familiares ou de trabalho. Ao entender as necessidades e comportamentos desses usuários, a aplicação pode ser moldada para oferecer uma plataforma que garanta praticidade, sincronia e colaboração eficaz. O mapeamento de stakeholders também é essencial para garantir que todas as partes envolvidas tenham suas expectativas atendidas, contribuindo para o sucesso da plataforma no mercado.
 
 # Especificações do Projeto
 
