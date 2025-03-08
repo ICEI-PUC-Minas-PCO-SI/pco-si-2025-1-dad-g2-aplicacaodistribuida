@@ -1,6 +1,29 @@
 # Introdução
+*Contextualização*
+No mercado atual, o consumo colaborativo tem ganhado cada vez mais relevância. A tendência de compras coletivas, onde amigos, casais ou mesmo grupos familiares se unem para realizar suas compras, está em crescimento. Esse comportamento de consumo é impulsionado pela busca por praticidade, economia e uma experiência de compra mais social e envolvente. No entanto, a falta de uma ferramenta eficaz que permita a comparação e organização dessas compras em tempo real tem se mostrado um desafio recorrente. É nesse contexto que surge a necessidade de uma solução inovadora que traga simplicidade e eficiência para o processo de compras em grupo.
 
-Imagine que você deseja apresentar este projeto para investidores que deverão decidir se investem ou não no desenvolvimento da sua ferramenta.
+O Brasil, por exemplo, é um país com uma rica cultura de consumo colaborativo e de eventos sociais que frequentemente envolvem compras em grupo. Festas, churrascos e eventos familiares são comuns, e a necessidade de organizar e compartilhar listas de compras é frequente. Apesar disso, o mercado carece de uma solução tecnológica que atenda essa demanda de forma integrada e em tempo real. Aplicativos existentes oferecem funcionalidades de listas de compras, mas não apresentam a capacidade de sincronia e colaboração que o Comprasync promete oferecer. Nesse sentido, o Comprasync se posiciona como uma ferramenta revolucionária, pronta para atender a um público ávido por inovação e praticidade.
+
+*Definição do problema*
+Atualmente, os consumidores enfrentam dificuldades ao tentar organizar compras em grupo de forma eficiente e colaborativa. A falta de uma plataforma que permita a sincronia e a atualização em tempo real das listas de compras gera confusão e desorganização. Além disso, a ausência de uma ferramenta que facilite a visualização e comparação de itens comprados entre diferentes usuários resulta em uma experiência de compra fragmentada e pouco prática.
+
+Definição dos Objetivos:
+
+O principal objetivo do Comprasync é desenvolver uma aplicação inovadora que permita a criação e atualização de listas de compras compartilhadas em tempo real. Entre os objetivos específicos estão:
+
+**1** Facilitar a sincronia: Proporcionar uma plataforma onde os usuários possam adicionar, remover e atualizar itens em suas listas de compras de forma colaborativa e em tempo real.
+
+**2** Comparação eficiente: Permitir que os usuários comparem suas listas de compras com facilidade, visualizando itens semelhantes e identificando discrepâncias.
+
+**3** Experiência de compra social: Incentivar a interação e a colaboração entre os usuários, tornando a experiência de compra mais social e envolvente.
+
+**4** Acessibilidade e usabilidade: Desenvolver uma interface intuitiva e fácil de usar, garantindo que a aplicação seja acessível para todos os tipos de usuários.
+
+*Justificativa*
+O Comprasync se destaca no mercado de consumo colaborativo ao oferecer uma solução completa e integrada para a organização de compras em grupo. Sua proposta de valor reside na capacidade de sincronia em tempo real, algo ainda pouco explorado por aplicativos existentes. A relevância desta ferramenta é evidente, dado o crescimento do consumo colaborativo e a necessidade de uma experiência de compra mais eficiente e organizada.
+
+Além disso, a aplicação pode ser facilmente monetizada por meio de parcerias com supermercados e marcas, oferecendo promoções exclusivas para usuários do Comprasync. Isso não só gera uma fonte de receita, como também fortalece a relação entre consumidores e varejistas. Investir no Comprasync é apostar em uma tendência de mercado em ascensão, com um potencial significativo para transformar a maneira como fazemos compras em grupo.
+
 
 A **Introdução** consiste das etapas: *Contextualização -- Definição do problema -- Definição dos Objetivos -- Justificativa*, e tem como função situar o seu trabalho dentro de um contexto de mercado e mostrar a importância da sua proposta para resolver a dor de um usuário.
 
