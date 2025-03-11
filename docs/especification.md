@@ -79,9 +79,6 @@ Perfil 3: Grupos de Trabalho e Amigos (20 a 40 anos)
 . Motivação: A principal motivação é a organização eficiente e a eliminação de erros ou duplicações nas compras. A experiência de colaboração e a visibilidade clara dos itens adquiridos são essenciais para esse grupo.
 
 
-
-
-
 2. Mapeamento de Stakeholders
    
 O mapeamento de stakeholders é uma ferramenta importante para identificar todas as partes envolvidas e interessadas no sucesso da aplicação. No caso do Comprasync, os stakeholders são variados, e é importante entender suas expectativas para que a plataforma atenda de maneira eficaz.
@@ -90,43 +87,11 @@ Usuários Finais (Consumidores):
 
 - Expectativa: Ter uma ferramenta que permita organizar compras em grupo de maneira prática e eficiente.
 Interesse: Buscar uma solução que ofereça praticidade, economia e facilite a colaboração em tempo real.
-Supermercados e Lojas Parceiras:
 
-- Expectativa: Parcerias comerciais que permitam divulgar ofertas e promoções para os usuários da plataforma.
-Interesse: Atração de consumidores que buscam ofertas em grupo e potencial de vendas por meio de promoções.
 Desenvolvedores e Designers:
 
 - Expectativa: Criar uma plataforma intuitiva e funcional, que atenda às necessidades dos usuários.
 Interesse: Desenvolver uma interface de fácil uso e que seja compatível com dispositivos móveis, garantindo a melhor experiência para o usuário.
-Investidores e Parceiros Comerciais:
-
-- Expectativa: Obter retorno financeiro a partir da adoção da plataforma e parcerias com empresas de varejo.
-Interesse: Garantir a sustentabilidade financeira do projeto, por meio de parcerias estratégicas com marcas e promoções exclusivas.
-
-
-
-
-3. Diagramas de Personas
-   
-O conceito de personas será utilizado para ilustrar melhor os perfis dos usuários do Comprasync. Seguem os três principais perfis:
-
-Persona 1: João, o Jovem Adulto
-Idade: 28 anos
-Profissão: Designer gráfico
-Hobbies: Festas com amigos, viagens e eventos sociais.
-Objetivos: Organizar compras para eventos com amigos e garantir que todos participem sem duplicar itens. Gosta de praticidade e soluções digitais.
-
-Persona 2: Ana, a Mãe Organizada
-Idade: 42 anos
-Profissão: Professora
-Hobbies: Reuniões familiares, organização de eventos e convivência social.
-Objetivos: Planejar compras de alimentos e bebidas para grandes encontros familiares de forma eficiente e sem erros.
-
-Persona 3: Ricardo, o Amigo Colaborador
-Idade: 35 anos
-Profissão: Analista de TI
-Hobbies: Viagens com amigos, eventos esportivos e confraternizações.
-Objetivos: Coordenar compras de última hora para viagens em grupo ou festas, garantindo que todos saibam o que foi comprado e evitando que itens sejam comprados em duplicidade.
 
 O público-alvo do Comprasync é formado por uma diversidade de perfis que buscam otimizar a experiência de compras em grupo, seja para eventos sociais, familiares ou de trabalho. Ao entender as necessidades e comportamentos desses usuários, a aplicação pode ser moldada para oferecer uma plataforma que garanta praticidade, sincronia e colaboração eficaz. O mapeamento de stakeholders também é essencial para garantir que todas as partes envolvidas tenham suas expectativas atendidas, contribuindo para o sucesso da plataforma no mercado.
 
