@@ -105,24 +105,40 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 Principais perfis de personas do CompraSync:
 
 João, o Jovem Adulto
+
 Idade: 28 anos
+
 Profissão: Designer gráfico
+
 Hobbies: Festas com amigos, viagens e eventos sociais.
+
 Objetivos: Organizar compras para eventos com amigos e garantir que todos participem sem duplicar itens. Gosta de praticidade e soluções digitais.
 
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/38e2a771e42d478f94fc45e089df9fada8865337/docs/img/joao_jovem_adulto.png)
+
 Ana, a Mãe Organizada
+
 Idade: 42 anos
+
 Profissão: Professora
+
 Hobbies: Reuniões familiares, organização de eventos e convivência social.
+
 Objetivos: Planejar compras de alimentos e bebidas para grandes encontros familiares de forma eficiente e sem erros.
 
 ![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/38e2a771e42d478f94fc45e089df9fada8865337/docs/img/ana_mae_organizada.png)
 
 Ricardo, o Amigo Colaborador
+
 Idade: 35 anos
+
 Profissão: Analista de TI
+
 Hobbies: Viagens com amigos, eventos esportivos e confraternizações.
+
 Objetivos: Coordenar compras de última hora para viagens em grupo ou festas, garantindo que todos saibam o que foi comprado e evitando que itens sejam comprados em duplicidade.
+
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/38e2a771e42d478f94fc45e089df9fada8865337/docs/img/ricardo_amigo_colaborador.png)
 
 ## Histórias de Usuários
 
@@ -153,31 +169,24 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
-
+|RF-001| A aplicação deve permitir que um usuário visualize uma lista de compras mesmo sem autenticar| ALTA |  
+|RF-002| A aplicação deve permitir o cadastro e login pelo próprio usuário, por meio de um email| ALTA |
+|RF-003| A aplicação deve permitir a criação de uma lista de compras caso o usuário já esteja autenticado| ALTA |
+|RF-004| A aplicação deve permitir adição, exclusão e edição dos itens da lista se autenticado| ALTA |
+|RF-005| A aplicação deve permitir que o usuário marque se o item foi comprado, mesmo que não esteja autenticado| ALTA |
+|RF-006| A aplicação deve permitir que o usuário selecione uma categoria para o item na lista| MÉDIO|
+|RF-007| A aplicação deve permitir que o usuário determine a quantidade desejada de cada item na lista| MÉDIO|
+|RF-008| A aplicação deve permitir que o usuário filtre os itens da lista por categoria| MÉDIO|
+|RF-009| A aplicação deve notificar o dono da lista quando ocorrer alguma edição| BAIXA |
+|RF-010| A aplicação deve permitir copiar a URL da lista em exibição| BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O sistema deve suportar mais de um usuário logado simultaneamente | ALTA | 
+|RNF-002| A aplicação deve estar disponível sempre que o usuário precisar consultar ou alterar sua lista | ALTA | 
+|RNF-003| A interface deve ser intuitiva e acessível para usuários de diferentes níveis de familiaridade com tecnologia | MÉDIO | 
 
 ## Restrições
 
@@ -186,14 +195,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|02| O sistema será desenvolvido com ferramentas gratuitas ou disponibilizadas pela PUC |
+|03| O sistema web deverá ser acessível via navegador, independentemente da plataforma |
 
 # Arquitetura da Solução
 
