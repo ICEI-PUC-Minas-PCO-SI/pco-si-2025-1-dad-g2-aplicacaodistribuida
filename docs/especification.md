@@ -116,7 +116,7 @@ Profissão: Professora
 Hobbies: Reuniões familiares, organização de eventos e convivência social.
 Objetivos: Planejar compras de alimentos e bebidas para grandes encontros familiares de forma eficiente e sem erros.
 
-![png](/img/ana_mae_organizada.png)
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/38e2a771e42d478f94fc45e089df9fada8865337/docs/img/ana_mae_organizada.png)
 
 Ricardo, o Amigo Colaborador
 Idade: 35 anos
