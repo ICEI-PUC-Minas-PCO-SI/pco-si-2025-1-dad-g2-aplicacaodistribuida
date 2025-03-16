@@ -202,7 +202,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/38e2a771e42d478f94fc45e089df9fada8865337/docs/img/arquitetura_aplicacao.png)
+![arq](docs/img/arquitetura_aplicacao.png)
 
 ## Tecnologias Utilizadas
 
