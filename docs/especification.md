@@ -279,9 +279,9 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
+| Repositório de código fonte         | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/tree/f59d743725ec478aa12f011d81ded8c67019a52a/src)                            |
 | Documentos do projeto               | GitHub                             | [http://....](https://github.com/orgs/ICEI-PUC-Minas-PCO-SI/projects/83/views/1)                            |
 | Projeto de interface                | Figma                              | http://....                            |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....                            |
+| Gerenciamento do projeto            | GitHub Projects                    | [http://....](https://github.com/orgs/ICEI-PUC-Minas-PCO-SI/projects/83/views/1)                            |
 | Hospedagem                          | Vercel                             | http://....                            |
  
