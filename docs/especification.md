@@ -212,13 +212,12 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ##  Divisão de papéis
 
-> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe. Siga o modelo do exemplo abaixo:
-
 ### Sprint 1
-- _Scrum master_: AlunaX
-- Protótipos: AlunoY
-- Testes: AlunoK
-- Documentação: AlunaZ
+- _Scrum master_: Jean Estanislau de Souza Guimarães
+- Introdução do Projeto: Otávio Soares da Costa e Igor Alvarenga Nunes de Brito
+- Especificação do Projeto: Gustavo Rafá Pinheiro da Silva e Pedro Henrique Morais de Assis
+- Arquitetura da Solução: João Vítor de Souza França
+- Planejamento do Projeto: Jean Estanislau de Souza Guimarães
 
 ### Sprint 2
 - _Scrum master_: AlunaY
@@ -228,18 +227,16 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ##  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme o exemplo abaixo.
-
 ### Sprint 1
 
-Atualizado em: 21/04/2024
+Atualizado em: 21/03/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Introdução | 01/02/2024     | 07/02/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | Objetivos    | 03/02/2024     | 10/02/2024 | 📝    |                 |
-| AlunoY        | Histórias de usuário  | 01/01/2024     | 07/01/2005 | ⌛     |                 |
-| AlunoK        | Personas 1  |    01/01/2024        | 12/02/2005 | ❌    |       |
+| Otávio Soares da Costa e Igor Alvarenga Nunes de Brito        | Introdução do Projeto | 07/03/2025     | 23/03/2025 | ✔️    | 11/03/2025      |
+| Gustavo Rafá Pinheiro da Silva e Pedro Henrique Morais de Assis        | Especificação do Projeto    | 11/03/2025     | 23/03/2025 | ✔️    | 14/03/2025                |
+| João Vítor de Souza França        | Arquitetura da Solução  | 14/03/2025     | 23/03/2025 | ✔️     | 21/03/2025                |
+| Jean Estanislau de Souza Guimarães        | Planejamento do Projeto  |    21/03/2025        | 23/03/2025 | ✔️    | 21/03/2025      |
 
 ### Sprint 2
 
@@ -249,8 +246,8 @@ Atualizado em: 21/04/2024
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
 | AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛    |                 |
+| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |                 |
 
 
 Legenda:
@@ -267,7 +264,9 @@ Legenda:
 
 ## Processo
 
-Coloque informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+O Scrum utilizado pelo grupo está na aba Projects do repositório GitHub presente, nele o Scrum Master adicionará as tarefas conforme cada tópico central da Sprint em questão e os donos de cada tarefa deverão mover os cards conforme o status da demanda. Por fim, o Scrum Master revisará a demanda realizada e então, decidirá se ela foi completa com sucesso ou se deve voltar para desenvolvimento.  
+
+
  
 > **Links úteis**:
 > - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
