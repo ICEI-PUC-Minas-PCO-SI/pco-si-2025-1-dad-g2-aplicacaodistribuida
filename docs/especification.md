@@ -256,12 +256,6 @@ Legenda:
 - ⌛: atrasado
 - ❌: não iniciado
 
-
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
-
 ## Processo
 
 O Scrum utilizado pelo grupo está na aba Projects do repositório GitHub presente, nele o Scrum Master adicionará as tarefas conforme cada tópico central da Sprint em questão e os donos de cada tarefa deverão mover os cards conforme o status da demanda. Por fim, o Scrum Master revisará a demanda realizada e então, decidirá se ela foi completa com sucesso ou se deve voltar para desenvolvimento.  
