@@ -266,14 +266,9 @@ Legenda:
 
 O Scrum utilizado pelo grupo está na aba Projects do repositório GitHub presente, nele o Scrum Master adicionará as tarefas conforme cada tópico central da Sprint em questão e os donos de cada tarefa deverão mover os cards conforme o status da demanda. Por fim, o Scrum Master revisará a demanda realizada e então, decidirá se ela foi completa com sucesso ou se deve voltar para desenvolvimento.  
 
-
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/6e6bbdde50c446bd64e10dacfde700f9f8b8f633/docs/img/kanbang2.png)
  
-> **Links úteis**:
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+Link Kanban: https://github.com/orgs/ICEI-PUC-Minas-PCO-SI/projects/83/views/1
 
 ## Ferramentas
 
