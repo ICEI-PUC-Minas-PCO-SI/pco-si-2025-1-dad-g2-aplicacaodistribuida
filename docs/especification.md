@@ -204,9 +204,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+O projeto utiliza as seguintes tecnologias:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+ . React (Frontend): Proporciona uma interface dinâmica e responsiva para a melhor experiência do usuário.
+ . Node.js (Backend): Responsável pelo processamento da lógica do sistema e comunicação eficiente com o banco de dados.
+ . Servidor WebSocket (JavaScript): Permite a atualização em tempo real entre os usuários conectados.
+ . SQL (Banco de Dados): Garante a organização, integridade e eficiência na manipulação dos dados.
+ . Visual Studio (IDE): Ambiente de desenvolvimento robusto e produtivo.
+ . Postman: Utilizado para testes de API, garantindo a validação das requisições e respostas do Backend.
+
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/figura_tecnologias_utilizadas.png)
 
 # Planejamento do projeto
 
