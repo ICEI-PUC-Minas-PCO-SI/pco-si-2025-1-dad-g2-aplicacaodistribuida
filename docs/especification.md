@@ -53,29 +53,30 @@ O Comprasync também oferece uma oportunidade de monetização através de parce
 Aprimoramento da Experiência do Usuário:
 O desenvolvimento do Comprasync leva em consideração as necessidades reais dos consumidores, como a sincronia em tempo real, a comparação de itens e a interação social. Estudos realizados com consumidores mostraram que 62% enfrentam dificuldades em manter as listas atualizadas, 54% mencionaram que ocorrem duplicações de itens e 72% gostariam de uma ferramenta para comparar itens. Essas informações ajudaram a moldar as funcionalidades da plataforma, garantindo que ela atenda às expectativas e resolva os problemas mais urgentes dos usuários.
 
-## Público-Alvo
-O Comprasync é uma aplicação voltada para pessoas que desejam realizar compras em grupo de forma mais organizada, eficiente e colaborativa. O público-alvo da aplicação inclui consumidores que participam frequentemente de eventos sociais como festas, churrascos e reuniões familiares, além de grupos que buscam economizar realizando compras coletivas. A seguir, vamos descrever os diferentes perfis de usuários que utilizarão a plataforma, destacando os conhecimentos prévios, a relação com a tecnologia e outros aspectos relevantes.
+# Público-Alvo  
 
+O **Comprasync** é voltado para pessoas que realizam compras em grupo e buscam uma forma mais organizada, eficiente e colaborativa de gerenciar suas listas. O aplicativo atende diferentes perfis de usuários que enfrentam dificuldades na organização de compras coletivas e valorizam a praticidade e a economia.  
 
-1. Perfis de Usuários
-   
-Perfil 1: Jovens Adultos (18 a 35 anos)
-. Conhecimento Prévio: Usuários com conhecimento intermediário a avançado em tecnologia, que usam frequentemente aplicativos para organizar suas compras e interagir com outras pessoas de forma online.
-. Relação com a Tecnologia: Este público está bastante familiarizado com plataformas digitais, smartphones e redes sociais. Costumam ser ávidos por novas soluções tecnológicas que tragam praticidade ao dia a dia.
-. Comportamento: Participam de eventos sociais como festas, churrascos e encontros com amigos e familiares. Buscam conveniência e formas de economizar, utilizando a tecnologia para facilitar a organização de compras em grupo.
-. Motivação: Valorizam a praticidade, economia e a interação social que a plataforma oferece. A sincronia em tempo real e a facilidade de comparação de itens são aspectos que atraem esse grupo.
+## Perfis de Usuários  
 
-Perfil 2: Famílias (35 a 55 anos)
-. Conhecimento Prévio: Familiaridade moderada com tecnologia, utilizando principalmente smartphones para funções básicas, como comunicação e compras online.
-. Relação com a Tecnologia: Embora não sejam especialistas em tecnologia, esse público utiliza com frequência aplicativos para facilitar a vida cotidiana, como bancos digitais e apps de compras.
-. Comportamento: Participam de eventos familiares, como festas de aniversário, churrascos e outras confraternizações, onde é comum organizar compras em grupo para economizar.
-. Motivação: Buscam ferramentas que ajudem a organizar melhor suas compras em grupo, especialmente quando há vários membros envolvidos. A praticidade de ter uma lista de compras compartilhada e a possibilidade de atualizar em tempo real são características valorizadas.
+### 1. Jovens Adultos (18 a 35 anos)  
+- **Conhecimento tecnológico:** Alto – usuários acostumados com aplicativos e redes sociais.  
+- **Relação com a tecnologia:** Utilizam frequentemente plataformas digitais para comunicação, organização e compras.  
+- **Comportamento:** Participam de eventos sociais, como festas e churrascos, onde a organização de compras compartilhadas é comum.  
+- **Motivação:** Buscam praticidade, economia e ferramentas que facilitem a colaboração em tempo real.  
 
-Perfil 3: Grupos de Trabalho e Amigos (20 a 40 anos)
-. Conhecimento Prévio: Usuários com bom conhecimento de tecnologia, muitos dos quais são usuários regulares de aplicativos para colaboração, como WhatsApp, Google Drive, entre outros.
-. Relação com a Tecnologia: São entusiastas de novas tecnologias e buscam soluções eficientes para gerenciar tarefas em grupo. Muitas vezes, realizam compras coletivas para eventos de trabalho ou viagens.
-. Comportamento: Organizam compras para eventos ou viagens em grupo, e desejam ter um controle mais eficiente sobre os itens adquiridos, com possibilidade de comunicação em tempo real.
-. Motivação: A principal motivação é a organização eficiente e a eliminação de erros ou duplicações nas compras. A experiência de colaboração e a visibilidade clara dos itens adquiridos são essenciais para esse grupo.
+### 2. Famílias (35 a 55 anos)  
+- **Conhecimento tecnológico:** Médio – utilizam smartphones e aplicativos para compras online e organização doméstica.  
+- **Relação com a tecnologia:** Buscam soluções intuitivas para o dia a dia, como aplicativos bancários e de compras.  
+- **Comportamento:** Organizadores de compras familiares e responsáveis pelo planejamento de compras recorrentes.  
+- **Motivação:** Precisam de uma ferramenta prática para gerenciar compras de forma eficiente, evitando erros e esquecimentos.  
+
+### 3. Grupos de Trabalho e Amigos (20 a 45 anos)  
+- **Conhecimento tecnológico:** Médio a alto – acostumados a aplicativos colaborativos como WhatsApp, Google Drive e Trello.  
+- **Relação com a tecnologia:** Valorizam ferramentas que otimizam a organização de tarefas e a comunicação em grupo.  
+- **Comportamento:** Realizam compras coletivas para eventos corporativos, confraternizações ou viagens.  
+- **Motivação:** Necessitam de uma plataforma eficiente que evite a duplicação de itens e facilite o acompanhamento das compras.  
+
 
 
 2. Mapeamento de Stakeholders
