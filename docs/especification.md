@@ -1,13 +1,13 @@
 # Introdução
 
-No mercado atual, o consumo colaborativo tem ganhado cada vez mais relevância. A tendência de compras coletivas, onde amigos, casais ou mesmo grupos familiares se unem para realizar suas compras, está em crescimento. Esse comportamento de consumo é impulsionado pela busca por praticidade, economia e uma experiência de compra mais social e envolvente. No entanto, a falta de uma ferramenta eficaz que permita a comparação e organização dessas compras em tempo real tem se mostrado um desafio recorrente. É nesse contexto que surge a necessidade de uma solução inovadora que traga simplicidade e eficiência para o processo de compras em grupo.
+No mercado atual, o consumo colaborativo tem ganhado cada vez mais relevância. A tendência de compras coletivas, onde amigos, casais ou mesmo grupos familiares se unem para realizar suas compras, está em crescimento. Esse comportamento de consumo é impulsionado pela busca por praticidade, economia e uma experiência de compra mais social e envolvente. Por este motivo, é de suma importância a existência de ferramentas que permitam a comparação e organização dessas compras em tempo real. É nesse contexto que surge a necessidade de uma soluções inovadoras que busquem realizar estas tarefas de diferentes modos.
 
-O Brasil, por exemplo, é um país com uma rica cultura de consumo colaborativo e de eventos sociais que frequentemente envolvem compras em grupo. Festas, churrascos e eventos familiares são comuns, e a necessidade de organizar e compartilhar listas de compras é frequente. Apesar disso, o mercado carece de uma solução tecnológica que atenda essa demanda de forma integrada e em tempo real. Aplicativos existentes oferecem funcionalidades de listas de compras, mas não apresentam a capacidade de sincronia e colaboração que o Comprasync promete oferecer. Nesse sentido, o Comprasync se posiciona como uma ferramenta revolucionária, pronta para atender a um público ávido por inovação e praticidade.
+O Brasil, por exemplo, é um país com uma rica cultura de consumo colaborativo e de eventos sociais que frequentemente envolvem compras em grupo. Festas, churrascos e eventos familiares são comuns, e a necessidade de organizar e compartilhar listas de compras é frequente. Nesse sentido, o Comprasync se posiciona como uma ferramenta pronta para atender a um público ávido por praticidade com uma plataforma gratuíta.
 
 ## Problema
-Atualmente, os consumidores enfrentam dificuldades ao tentar organizar compras em grupo de forma eficiente e colaborativa. A falta de uma plataforma que permita a sincronia e a atualização em tempo real das listas de compras gera confusão e desorganização. A ausência de uma ferramenta que facilite a visualização e comparação de itens comprados entre diferentes usuários resulta em uma experiência de compra fragmentada e pouco prática.
+Atualmente, os consumidores enfrentam dificuldades ao tentar organizar compras em grupo de forma eficiente e colaborativa. A falta de uma alta gama de plataformas que permitam a sincronia e a atualização em tempo real das listas de compras gera confusão e desorganização. A ausência de uma ferramenta que facilite a visualização e comparação de itens comprados entre diferentes usuários resulta em uma experiência de compra fragmentada e pouco prática.
 
-Essa aplicação será usada em contextos diversos, desde pequenos grupos de amigos fazendo compras para um churrasco até grandes famílias organizando compras semanais. O Comprasync pretende utilizar tecnologias de nuvem para garantir a atualização em tempo real e proporcionar uma experiência de usuário fluida e intuitiva. Além disso, o desenvolvimento da aplicação se beneficiará de metodologias como o Design Thinking, que permite um olhar de ponta a ponta para o problema, garantindo que a solução atenda às reais necessidades dos usuários.
+Essa aplicação será usada em contextos diversos, desde pequenos grupos de amigos fazendo compras para um churrasco até grandes famílias organizando compras semanais. Além disso, o desenvolvimento da aplicação se beneficiará de metodologias como o Design Thinking, que permite um olhar de ponta a ponta para o problema, garantindo que a solução atenda às reais necessidades dos usuários.
 
 As principais dificuldades incluem:
 
@@ -24,7 +24,7 @@ As principais dificuldades incluem:
 
 ### Objetivo Geral: 
 
-Desenvolver um software inovador que solucione o problema da organização e comparação de compras em grupo de forma eficiente e colaborativa, com sincronia em tempo real e uma interface intuitiva.
+Desenvolver um software que solucione o problema da organização e comparação de compras em grupo de forma eficiente e colaborativa, com sincronia em tempo real e uma interface intuitiva.
 
 ### Objetivos Específicos:
 
@@ -39,13 +39,13 @@ Acessibilidade e Usabilidade: Garantir que a interface da aplicação seja intui
 
 ## Justificativa
 
-O Comprasync nasce da identificação de uma lacuna significativa no mercado de consumo colaborativo. Embora as compras em grupo sejam uma prática comum, as ferramentas existentes não atendem adequadamente às necessidades de sincronização em tempo real, comparação de itens e organização eficaz. Ao focar na experiência do usuário, o Comprasync visa transformar a maneira como as pessoas fazem compras coletivas, tornando o processo mais eficiente e colaborativo.
+O Comprasync nasce da identificação de um problema significativo no mercado de consumo colaborativo. Embora as compras em grupo sejam uma prática comum, não são todas as ferramentas existentes que atendem adequadamente às necessidades de sincronização em tempo real, comparação de itens e organização eficaz. Ao focar na experiência do usuário, o Comprasync visa transformar a maneira como as pessoas fazem compras coletivas, tornando o processo mais eficiente e colaborativo.
 
 Crescimento do Consumo Colaborativo:
 O consumo colaborativo tem se expandido no Brasil, especialmente em eventos sociais e compras familiares. De acordo com um estudo da Kantar (2020), 56% dos brasileiros já realizaram compras coletivas, e esse número tende a crescer. A necessidade de uma plataforma que ajude a organizar compras em grupo de forma eficiente é evidente, e o Comprasync foi desenvolvido para atender a essa demanda, proporcionando uma experiência de compra sem erros e com maior economia.
 
 Impacto na Vida dos Usuários:
-Sem uma ferramenta eficaz, os consumidores enfrentam frustrações com a duplicação de itens, compras esquecidas e dificuldades de comunicação. Isso não só gera perda de tempo e esforço, mas também pode resultar em custos adicionais. Um estudo da PwC revelou que 73% dos consumidores brasileiros ficam frustrados quando o processo de compra não é rápido e eficiente. A criação do Comprasync visa resolver esses problemas, oferecendo uma plataforma organizada e fácil de usar, que melhora a qualidade da experiência de compra.
+Um estudo da PwC revelou que 73% dos consumidores brasileiros ficam frustrados quando o processo de compra não é rápido e eficiente. A criação do Comprasync visa resolver esses problemas, oferecendo uma plataforma organizada e fácil de usar, que melhora a qualidade da experiência de compra.
 
 Benefícios para o Mercado:
 O Comprasync também oferece uma oportunidade de monetização através de parcerias com supermercados e marcas. Promoções exclusivas podem ser oferecidas aos usuários, criando uma relação vantajosa para todos os envolvidos. A plataforma pode ser um canal importante para varejistas e marcas que buscam atingir consumidores de forma mais direta e personalizada.
@@ -77,18 +77,16 @@ O **Comprasync** é voltado para pessoas que realizam compras em grupo e buscam 
 - **Comportamento:** Realizam compras coletivas para eventos corporativos, confraternizações ou viagens.  
 - **Motivação:** Necessitam de uma plataforma eficiente que evite a duplicação de itens e facilite o acompanhamento das compras.  
 
-
-
-2. Mapeamento de Stakeholders
+## Mapeamento de Stakeholders
    
 O mapeamento de stakeholders é uma ferramenta importante para identificar todas as partes envolvidas e interessadas no sucesso da aplicação. No caso do Comprasync, os stakeholders são variados, e é importante entender suas expectativas para que a plataforma atenda de maneira eficaz.
 
-Usuários Finais (Consumidores):
+### Usuários Finais (Consumidores):
 
 - Expectativa: Ter uma ferramenta que permita organizar compras em grupo de maneira prática e eficiente.
 Interesse: Buscar uma solução que ofereça praticidade, economia e facilite a colaboração em tempo real.
 
-Desenvolvedores e Designers:
+### Desenvolvedores e Designers:
 
 - Expectativa: Criar uma plataforma intuitiva e funcional, que atenda às necessidades dos usuários.
 Interesse: Desenvolver uma interface de fácil uso e que seja compatível com dispositivos móveis, garantindo a melhor experiência para o usuário.
@@ -172,21 +170,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| 
 |RF-001| A aplicação deve permitir que um usuário visualize uma lista de compras mesmo sem autenticar| ALTA |  
 |RF-002| A aplicação deve permitir o cadastro e login pelo próprio usuário, por meio de um email| ALTA |
-|RF-003| A aplicação deve permitir a criação de uma lista de compras caso o usuário já esteja autenticado| ALTA |
-|RF-004| A aplicação deve permitir adição, exclusão e edição dos itens da lista se autenticado| ALTA |
-|RF-005| A aplicação deve permitir que o usuário marque se o item foi comprado, mesmo que não esteja autenticado| ALTA |
-|RF-006| A aplicação deve permitir que o usuário selecione uma categoria para o item na lista| MÉDIO|
-|RF-007| A aplicação deve permitir que o usuário determine a quantidade desejada de cada item na lista| MÉDIO|
-|RF-008| A aplicação deve permitir que o usuário filtre os itens da lista por categoria| MÉDIO|
-|RF-009| A aplicação deve notificar o dono da lista quando ocorrer alguma edição| BAIXA |
-|RF-010| A aplicação deve permitir copiar a URL da lista em exibição| BAIXA |
+|RF-003| A aplicação deve permitir adição, exclusão e edição dos itens da lista se autenticado| ALTA |
+|RF-004| A aplicação deve permitir que o usuário marque se o item foi comprado, mesmo que não esteja autenticado| ALTA |
+|RF-005| A aplicação deve permitir que o usuário filtre os itens da lista por categoria| MÉDIO|
+|RF-006| A aplicação deve notificar o dono da lista quando ocorrer alguma edição| BAIXA |
+|RF-007| A aplicação deve permitir copiar a URL da lista em exibição| BAIXA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001| O sistema deve suportar mais de um usuário logado simultaneamente | ALTA | 
-|RNF-002| A aplicação deve estar disponível sempre que o usuário precisar consultar ou alterar sua lista | ALTA | 
+|RNF-002| A aplicação deve estar disponível 98% do tempo | ALTA | 
 |RNF-003| A interface deve ser intuitiva e acessível para usuários de diferentes níveis de familiaridade com tecnologia | MÉDIO | 
 
 ## Restrições
