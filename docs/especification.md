@@ -223,10 +223,11 @@ O projeto utiliza as seguintes tecnologias:
 - Planejamento do Projeto: Jean Estanislau de Souza Guimarães
 
 ### Sprint 2
-- _Scrum master_: AlunaY
-- Desenvolvedor _front-end_: AlunoX
-- Desenvolvedor _back-end_: AlunoK
-- Testes: AlunaZ
+- _Scrum master_: Jean Estanislau de Souza Guimarães
+- Desenvolvedor _front-end_: Igor Alvarenga Nunes de Brito, Pedro Henrique Morais de Assis e Gustavo Rafá Pinheiro da Silva
+- Desenvolvedor _back-end_: Otávio Soares da Costa e João Vítor de Souza França
+- Desenvolvedor _banco de dados_: Jean Estanislau de Souza Guimarães
+- Testes: João Vítor de Souza França e Pedro Henrique Morais de Assis
 
 ##  Quadro de tarefas
 
