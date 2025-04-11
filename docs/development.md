@@ -5,7 +5,7 @@
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
 Diagrama de Classes
-![arq]([https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/diagrama_de_classes.png])
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/diagrama_de_classes.png)
 
 ## Tecnologias Utilizadas
 
