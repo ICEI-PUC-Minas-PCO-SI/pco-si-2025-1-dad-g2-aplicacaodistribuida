@@ -1,6 +1,20 @@
 
 # Desenvolvimento da Aplicação
 
+## Wireframes
+Tela Inicial
+
+![Tela Inicial](https://github.com/user-attachments/assets/271adbe2-c422-4197-aa2c-b49a564552bd)
+
+Visualização de Lista por Codigo
+
+![Lista sem logar](https://github.com/user-attachments/assets/8141a878-0b14-42bc-81d0-015fb325032c)
+
+Edição e criação de listas
+
+![Ja logado](https://github.com/user-attachments/assets/8def3eb6-56ec-46ea-b14e-20ec1ae5b537)
+
+
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
