@@ -25,7 +25,7 @@ Diagrama de Classes
 ![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/diagrama_de_classes.png)
 
 Diagrama de Casos de Uso
-!![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/DiagramaCasodeUso.png)
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/DiagramaCasodeUso.PNG)
 
 ## Tecnologias Utilizadas
 
