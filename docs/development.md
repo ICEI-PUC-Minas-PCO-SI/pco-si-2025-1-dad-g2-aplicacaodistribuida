@@ -18,6 +18,9 @@ Edição e criação de listas
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
+Diagrama DER
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/9a904e46e0c32c3214af545a24ab0b3f4fdf92ba/docs/img/diagrama_der.png)
+
 Diagrama de Classes
 ![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/master/docs/img/diagrama_de_classes.png)
 
