@@ -1,69 +1,120 @@
 .container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #f9f9f9;
   min-height: 100vh;
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* Fundo em degradê sutil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .formContainer {
-  max-width: 600px;
-  width: 100%;
-  background: #fff;
+  background-color: #fff;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.formContainer form div {
-  margin-bottom: 1rem;
-}
-
-.formContainer input,
-.formContainer textarea {
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.25rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  max-width: 500px;
+  margin-top: 4rem;
+  transition: transform 0.3s ease;
 }
 
-.formContainer button {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff;
+.formContainer:hover {
+  transform: scale(1.01);
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #4CAF50;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.formContainer button:hover {
-  background-color: #0056b3;
-}
-
-.itemList {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-top: 1.5rem;
-  padding: 0;
-  list-style: none;
-}
-
-.itemList li {
-  background-color: #f0f0f0;
-  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.itemList li strong {
+button:hover {
+  background-color: #43a047;
+}
+
+/* Listagem dos cards */
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
   color: #333;
-  font-size: 1.1rem;
 }
 
-.itemList li em {
+.codigo {
+  color: #4CAF50;
+}
+
+.nome {
+  color: #1e88e5;
+}
+
+.descricao {
+  font-style: italic;
   color: #666;
-  font-size: 0.95rem;
 }
