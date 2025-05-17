@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './NovaLista.module.css';
 
 const NovaLista = () => {
@@ -10,6 +10,19 @@ const NovaLista = () => {
 
   const [lista, setLista] = useState([]);
 
+  // Carrega as listas salvas no localStorage ao inicializar
+  useEffect(() => {
+    const storedList = localStorage.getItem('listas');
+    if (storedList) {
+      setLista(JSON.parse(storedList));
+    }
+  }, []);
+
+  // Salva as listas no localStorage sempre que ela for atualizada
+  useEffect(() => {
+    localStorage.setItem('listas', JSON.stringify(lista));
+  }, [lista]);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -17,6 +30,14 @@ const NovaLista = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Verifica se o código já existe
+    const codigoExistente = lista.some(item => item.codigo === formData.codigo);
+    if (codigoExistente) {
+      alert('Já existe uma lista com esse código.');
+      return;
+    }
+
     setLista((prev) => [...prev, formData]);
     setFormData({ codigo: '', nome: '', descricao: '' });
   };
