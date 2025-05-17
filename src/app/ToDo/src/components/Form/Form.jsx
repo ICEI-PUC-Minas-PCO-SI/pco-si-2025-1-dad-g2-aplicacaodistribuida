@@ -20,7 +20,7 @@ const Form = ({ novositens }) => {
 
   return (
     <div className={style.buylist}>
-      <h2>Criar Tarefa</h2>
+      <h2>Adicionar Produto</h2>
       <form onSubmit={funcenvio}>
         <input
           value={value}
@@ -32,12 +32,12 @@ const Form = ({ novositens }) => {
           value={category}
           onChange={e => setCategory(e.target.value)}
         >
-          <option value="">Selecione uma opção</option>
+          <option value="">Selecione uma Categoria</option>
           <option value="Massas">Massas</option>
           <option value="Fruta">Fruta</option>
           <option value="Diversos">Diversos</option>
         </select>
-        <button type="submit">Criar Tarefa</button>
+        <button type="submit">Adicionar a Lista</button>
       </form>
     </div>
   );

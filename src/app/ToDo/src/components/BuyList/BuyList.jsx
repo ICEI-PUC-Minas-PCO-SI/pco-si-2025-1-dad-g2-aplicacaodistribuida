@@ -8,7 +8,7 @@ const BuyList = ({ item,removeritem,concluirItem }) => {
         <p className={style.category}>{item.category}</p>
       </div>
       <div>
-        <button onClick={()=>{concluirItem(item.id)}} className={style.complete}>Completar</button>
+        <button onClick={()=>{concluirItem(item.id)}} className={style.complete}>Ja Comprei</button>
         <button onClick={()=>{removeritem(item.id)}} className={style.remove}>X</button>
       </div>
     </div>

@@ -54,3 +54,49 @@
   .registrar:hover {
     transform: scale(1.05);
   }
+  .profileWrapper {
+    position: relative;
+  }
+  
+  /* O “botão” de perfil */
+  .profileIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url('./icone.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  
+
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem); /* logo abaixo do ícone */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cada opção dentro do dropdown */
+  .dropdownItem {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    font-size: small;
+    transition: blue 0.3s ease;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #4e4b4b;
+  }
