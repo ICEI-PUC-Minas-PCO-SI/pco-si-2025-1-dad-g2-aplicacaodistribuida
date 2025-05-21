@@ -15,15 +15,6 @@ const Footer = () => (
     </div>
 
     <div className={styles.column}>
-      <h4>Sobre Nós</h4>
-      <ul>
-        <li><a href="#">Equipe</a></li>
-        <li><a href="#">Sobre o CompraSync</a></li>
-        <li><a href="#">Informações Para Nerds</a></li>
-      </ul>
-    </div>
-
-    <div className={styles.column}>
       <h4>Contatos</h4>
       <ul>
         <li><a href="#">Email</a></li>
@@ -38,9 +29,11 @@ const Footer = () => (
     <div className={styles.column}>
       <h4>CompraSync</h4>
       <ul>
+        <li><a href="#">Sobre</a></li>
         <li><a href="#">Guia</a></li>
         <li><a href="#">Ideias</a></li>
         <li><a href="#">Parcerias</a></li>
+          <li><a href="#">Equipe</a></li>
       </ul>
     </div>
   </footer>
