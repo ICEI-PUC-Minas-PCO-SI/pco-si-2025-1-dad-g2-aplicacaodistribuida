@@ -106,6 +106,7 @@ const Header = ({ token }) => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
+     window.location.href = '/';
     window.location.reload();
   };
 

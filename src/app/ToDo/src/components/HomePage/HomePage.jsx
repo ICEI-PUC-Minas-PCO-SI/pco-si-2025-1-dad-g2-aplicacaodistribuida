@@ -31,7 +31,7 @@ const HomePage = () => {
         </form>
       </main>
 
-      <Footer />
+
     </div>
   );
 };
