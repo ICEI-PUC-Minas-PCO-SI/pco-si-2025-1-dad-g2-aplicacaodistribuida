@@ -1,11 +1,11 @@
 import React from 'react';
-import {  FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import styles from './Footer.module.css';
 
 const Footer = () => (
-    <footer className={styles.footer}>
+  <footer className={styles.footer}>
     <div className={styles.socialWrapper}>
-      <div className={styles.brand}>ElderCare</div>
+      <div className={styles.brand}>CompraSync</div>
       <div className={styles.social}>
         <FaTwitter size={24} />
         <FaInstagram size={24} />

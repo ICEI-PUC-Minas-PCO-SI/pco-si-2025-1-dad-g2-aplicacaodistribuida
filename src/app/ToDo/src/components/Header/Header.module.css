@@ -1,102 +1,156 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    border-bottom: 2px solid #ccc;
-    padding: 0.5rem 1rem;
-    z-index: 100;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-  }
-  .link:hover {
-    opacity: 0.7;
-  }
-  
-  .logar {
-    background-color: #e3e3e3;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    cursor: pointer;
-    border-radius: 6.5px;
-    transition: transform 0.1s ease-in-out;
-    color: #000;  
-    
-  }
-  .logar:hover {
-    transform: scale(1.05);
-  }
-  
-  .registrar {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    cursor: pointer;
-    border-radius: 6.5px;
-    transition: transform 0.1s ease-in-out;
-    
-  }
-  .registrar:hover {
-    transform: scale(1.05);
-  }
-  .profileWrapper {
-    position: relative;
-  }
-  
-  /* O “botão” de perfil */
-  .profileIcon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-image: url('./icone.jpg');
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-  }
-  
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
 
-  .dropdown {
-    position: absolute;
-    top: calc(100% + 0.5rem); /* logo abaixo do ícone */
-    right: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 0.5rem 0;
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Cada opção dentro do dropdown */
-  .dropdownItem {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    color: #000;
-    text-decoration: none;
-    font-size: small;
-    transition: blue 0.3s ease;
-  }
-  
-  .dropdownItem:hover {
-    background-color: #4e4b4b;
-  }
+.logo {
+  height: 40px;       
+  width: auto;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.link:hover {
+  opacity: 0.7;
+}
+
+.logar,
+.registrar {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6.5px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.logar {
+  background-color: #e3e3e3;
+  color: #000;
+}
+.logar:hover { transform: scale(1.05); }
+
+.registrar {
+  background-color: #000;
+  color: #fff;
+}
+.registrar:hover { transform: scale(1.05); }
+
+.profileWrapper {
+  position: relative;
+}
+
+
+.profileIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.dropdownItem {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #000;
+}
+.dropdownItem:hover {
+  background-color: #4d4b4b;
+}
+/* Overlay que cobre toda a viewport */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Caixa branca central */
+.modal {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  background: #e0e0e0;
+}
+
+.actions button:last-child {
+  background: #007bff;
+  color: #fff;
+}
