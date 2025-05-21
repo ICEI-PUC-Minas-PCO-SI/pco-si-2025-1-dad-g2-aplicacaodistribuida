@@ -37,15 +37,6 @@ export default function ListsPage() {
       setLoading(false);
     }
   };
-
-  useEffect(() => {
-    if (!token) {
-      navigate('/');
-      return;
-    }
-    fetchListas();
-  }, [token, navigate]);
-
   const shareLista = (codigo) => {
     const url = `${window.location.origin}/?codigolista=${codigo}`;
     navigator.clipboard.writeText(url)
