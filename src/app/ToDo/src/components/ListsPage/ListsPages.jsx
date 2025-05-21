@@ -11,17 +11,21 @@ export default function ListsPage() {
 
   const token = localStorage.getItem('token');
 
-
-  
+  // Configura cabeçalho Authorization
   useEffect(() => {
     if (token) {
       api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      fetchListas();  // chama a busca após definir o header
+    } else {
+      setLoading(false); // libera a UI caso não haja token
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
 
+  // Busca as listas
   const fetchListas = async () => {
     try {
-      setLoading(true);
+      setLoading(true);  // ← ativa o loading
       const res = await api.get('/listasCompras');
       const data = Array.isArray(res.data) ? res.data : [];
       setListas(data);
@@ -34,9 +38,10 @@ export default function ListsPage() {
       }
       setListas([]);
     } finally {
-      setLoading(false);
+      setLoading(false);  // ← desativa o loading
     }
   };
+
   const shareLista = (codigo) => {
     const url = `${window.location.origin}/?codigolista=${codigo}`;
     navigator.clipboard.writeText(url)
