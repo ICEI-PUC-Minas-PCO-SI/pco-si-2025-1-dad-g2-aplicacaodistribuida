@@ -28,7 +28,7 @@ export default function ListsPage() {
     } catch (err) {
       console.error(err);
       if (err.response?.status === 401) {
-        navigate('/login');
+        navigate('/');
       } else {
         alert('Erro ao buscar listas: ' + (err.response?.data?.message || err.message));
       }
@@ -40,7 +40,7 @@ export default function ListsPage() {
 
   useEffect(() => {
     if (!token) {
-      navigate('/login');
+      navigate('/');
       return;
     }
     fetchListas();
