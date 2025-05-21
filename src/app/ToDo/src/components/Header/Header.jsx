@@ -91,7 +91,7 @@ const Header = ({ token}) => {
 
   const handleRegister = async ({ nome, email, senha }) => {
     try {
-      const res = await api.post('/auth/register', { nome, email, senha });
+      const res = await api.post('/auth/registro', { nome, email, senha });
       const { token: newToken } = res.data;
       localStorage.setItem('token', newToken);
       window.alert('Obrigado por criar uma conta')
