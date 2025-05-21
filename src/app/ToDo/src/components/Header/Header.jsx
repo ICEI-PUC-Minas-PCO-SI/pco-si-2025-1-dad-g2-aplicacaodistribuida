@@ -107,7 +107,6 @@ const Header = ({ token }) => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     window.location.reload();
-    setDropdownOpen(false);
   };
 
   return (
