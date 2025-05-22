@@ -10,7 +10,7 @@ const HomePage = () => {
   const handleSubmit = e => {
     e.preventDefault();
     if (!code.trim()) return;
-    window.location.href = `${window.location.pathname}?codigolista=${encodeURIComponent(code)}`;
+    window.location.href = `${window.location.pathname}#/?codigolista=${encodeURIComponent(code)}`;
   };
 
   return (

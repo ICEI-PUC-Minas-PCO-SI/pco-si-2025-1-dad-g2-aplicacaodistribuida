@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import LoadingModal from '../LoadingModal/LoadingModal'; 
 import HomePage from '../HomePage/HomePage';
-
+import style from './ListsPage.module.css';
 export default function ListsPage() {
   const [listas, setListas] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,21 +11,21 @@ export default function ListsPage() {
 
   const token = localStorage.getItem('token');
 
-  // Configura cabeçalho Authorization
+
   useEffect(() => {
     if (token) {
       api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      fetchListas();  // chama a busca após definir o header
+      fetchListas(); 
     } else {
-      setLoading(false); // libera a UI caso não haja token
+      setLoading(false); 
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [token]);
 
-  // Busca as listas
+
   const fetchListas = async () => {
     try {
-      setLoading(true);  // ← ativa o loading
+      setLoading(true); 
       const res = await api.get('/listasCompras');
       const data = Array.isArray(res.data) ? res.data : [];
       setListas(data);
@@ -38,12 +38,12 @@ export default function ListsPage() {
       }
       setListas([]);
     } finally {
-      setLoading(false);  // ← desativa o loading
+      setLoading(false); 
     }
   };
 
   const shareLista = (codigo) => {
-    const url = `${window.location.origin}/?codigolista=${codigo}`;
+    const url = `${window.location.origin}/#/?codigolista=${codigo}`;
     navigator.clipboard.writeText(url)
       .then(() => alert('URL copiada: ' + url))
       .catch(() => alert('Falha ao copiar URL'));
@@ -65,6 +65,7 @@ export default function ListsPage() {
 
   return (
     <>
+    <div className={style.all}>
       <LoadingModal visible={loading} message="Carregando listas..." />
       {!loading && (
         <div style={{ padding: 32, background: '#f3f4f6', minHeight: '100vh' }}>
@@ -112,6 +113,7 @@ export default function ListsPage() {
           )}
         </div>
       )}
+      </div>
     </>
   );
 }
