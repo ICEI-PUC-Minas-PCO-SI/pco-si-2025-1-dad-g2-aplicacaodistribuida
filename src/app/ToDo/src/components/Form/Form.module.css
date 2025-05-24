@@ -1,26 +1,48 @@
-button{
-    background-color: #333974;
+button {
+    background-color: #4590ad;
     color: #fff;
-    padding: 5px 10px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
-    opacity: 0.8;
-    transition: 0.3s;
-    margin-right: 10px;
-    
-}
-button:hover{
     opacity: 1;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-right: 10px;
 }
 
-.buylist-form{
-    padding-bottom: 1.5 rem;
+button:hover {
+    background-color: #357089;
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-input,select{
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #fff;
-    border-radius: 3px;
+
+
+.buylist-form {
+    padding-bottom: 1.5rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para inputs e selects */
+input, select {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
     width: 100%;
+    font-size: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4590ad;
+    box-shadow: 0 0 5px rgba(69, 144, 173, 0.3);
+    outline: none;
 }

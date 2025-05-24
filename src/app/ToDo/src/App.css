@@ -16,15 +16,21 @@ body{
 }
 
 .app {
-  flex: 1;  
-  margin: 30px auto 0; 
-  background-color: #efefef;
-  padding: 20px 30px;
-
-
+  flex: 1;
+  margin: 40px auto 0;
+  max-width: 800px;
+  background-color: #ddddd3;
+  padding: 30px 40px;
   padding-bottom: 8rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
 }
+
+.app:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
 
 
 .item-list{
