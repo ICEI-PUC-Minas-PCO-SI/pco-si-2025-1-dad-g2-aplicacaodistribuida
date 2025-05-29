@@ -36,7 +36,7 @@ const BuyList = ({ item, removeritem, concluirItem }) => {
       </div>
 
       {/* Toast no canto superior direito */}
-      <Toast visible={toast.visible} message={toast.message} type={toast.type} position = "top-right" />
+      <Toast visible={toast.visible} message={toast.message} type={toast.type} position />
     </>
   );
 };

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompraSyncAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+852b1da6f48ac54580fa2fce46c85668d3f6ca63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3efd66e18d1726b1d30bd989ea2dda7ee7990c1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CompraSyncAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CompraSyncAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
