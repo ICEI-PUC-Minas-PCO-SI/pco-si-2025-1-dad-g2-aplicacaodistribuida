@@ -1,9 +1,18 @@
 import { useState } from 'react';
 import style from './Form.module.css';
+import Toast from '../Toast/Toast'; // ajuste o caminho conforme sua estrutura
 
 const Form = ({ novositens }) => {
   const [value, setValue] = useState('');
   const [category, setCategory] = useState('');
+  const [toast, setToast] = useState({ visible: false, message: '', type: '' });
+
+  const mostrarToast = (message, type) => {
+    setToast({ visible: true, message, type });
+    setTimeout(() => {
+      setToast({ visible: false, message: '', type: '' });
+    }, 3000);
+  };
 
   const funcenvio = e => {
     e.preventDefault();
@@ -14,8 +23,9 @@ const Form = ({ novositens }) => {
     }
 
     novositens(value, category);  
-    setValue('');                 
+    setValue('');
     setCategory('');
+    mostrarToast("Produto adicionado com sucesso!", "success");
   };
 
   return (
@@ -35,10 +45,17 @@ const Form = ({ novositens }) => {
           <option value="">Selecione uma Categoria</option>
           <option value="Massas">Massas</option>
           <option value="Fruta">Fruta</option>
+          <option value="Bebidas">Bebidas</option>
+          <option value="Carnes">Carnes</option>
+          <option value="Frios">Frios</option>
+          <option value="Limpeza">Limpeza</option>
+          <option value="Higiene">Higiene</option>
           <option value="Diversos">Diversos</option>
         </select>
         <button type="submit">Adicionar a Lista</button>
       </form>
+
+      <Toast visible={toast.visible} message={toast.message} type={toast.type} />
     </div>
   );
 };
