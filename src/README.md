@@ -2,10 +2,11 @@
 
 ## Instalação do Sistema
 
-Descrição dos requisitos e processo de instalação do sistema.
+O sistema em questão é Web com hospedagem, acesso em: https://comprasync.vercel.app
+
+Obs: A aplicação pode demorar um pouco na primeira utilização, isso acontece por conta da hibernação do Render! 
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+### [1.0.0] - 01/06/2025
+#### Versão Completa para Entrega
