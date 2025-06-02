@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import style from './Form.module.css';
-import Toast from '../Toast/Toast'; // ajuste o caminho conforme sua estrutura
-
+import Toast from '../Toast/Toast'; 
+import Swal from 'sweetalert2';
 const Form = ({ novositens }) => {
   const [value, setValue] = useState('');
   const [category, setCategory] = useState('');
@@ -18,14 +18,32 @@ const Form = ({ novositens }) => {
     e.preventDefault();
 
     if (value === '' || category === '') {
-      window.alert("Existe campo vazio");
+     Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Existem campos vazios",
+});
       return;
     }
 
     novositens(value, category);  
     setValue('');
     setCategory('');
-    mostrarToast("Produto adicionado com sucesso!", "success");
+    const Toast = Swal.mixin({
+  toast: true,
+  position: "center",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+});
+Toast.fire({
+  icon: "success",
+  title: "Item Adiconado"
+});
   };
 
   return (

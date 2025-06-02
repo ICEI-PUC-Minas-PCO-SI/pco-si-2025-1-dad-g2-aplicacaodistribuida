@@ -1,22 +1,67 @@
-.complete
-{
-    background-color: #5cb85c;
-}
-.remove{
-    background-color: #d9534f;
-}
-
-.item{
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-padding: 10px;
-margin-bottom: 10px;
-border-radius: 5px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+/* Container geral de cada item */
+.item {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.category{
-    font-size: 10px;
+/* Linha interna para alinhar checkbox e texto/categoria */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espaço entre a checkbox e o bloco de texto */
+}
+
+/* Bloco que empilha item (texto) em cima e categoria embaixo */
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+/* Texto do item */
+.text {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Categoria (abaixo do texto) */
+.category {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Checkbox aumentada para que o “V” fique maior */
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  /* Aumenta toda a caixa + check internamente */
+  transform: scale(1.5);
+  transform-origin: center;
+  /* Deixa o “V” em verde quando marcado */
+  accent-color: #5cb85c;
+}
+
+/* Botão “remover” */
+.remove {
+  background-color: #d9534f;
+  border: none;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Efeito hover no botão remover */
+.remove:hover {
+  background-color: #c9302c;
 }

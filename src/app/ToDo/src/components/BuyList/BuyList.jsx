@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import style from './BuyList.module.css';
 import Toast from '../Toast/Toast'; 
+import Swal from 'sweetalert2';
 
 const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
   const [toast, setToast] = useState({ visible: false, message: '', type: '' });
@@ -12,31 +13,108 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
     }, 3500); 
   };
 
-  const handleConcluir = id => {
+  // Novo handleConcluir que recebe checked
+  const handleConcluir = (id, checked) => {
+    // Atualiza o estado no componente pai (inverte item.isCompleted)
     concluirItem(id);
-    mostrarToast("Produto comprado", "info");
+
+    // Só exibe o toast do Swal quando estiver marcando
+    if (checked) {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toastElem) => {
+          toastElem.onmouseenter = Swal.stopTimer;
+          toastElem.onmouseleave = Swal.resumeTimer;
+        }
+      });
+      Toast.fire({
+        icon: "success",
+        title: "Produto comprado"
+      });
+    }
   };
 
-  const handleRemover = async id => {
-    var success = await removeritem(id);
-    if (!success) return;
-    mostrarToast("Item removido da lista!", "warning");
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+  });
+
+  const handleRemover = id => {
+    swalWithBootstrapButtons.fire({
+      title: "Tem certeza?",
+      text: "Você não poderá reverter isso!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Sim, remover!",
+      cancelButtonText: "Não, cancelar!",
+      reverseButtons: true
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        const success = await removeritem(id);
+        if (!success) return;
+        mostrarToast("Item removido da lista!", "warning");
+
+        swalWithBootstrapButtons.fire({
+          title: "Removido!",
+          text: "O item foi removido com sucesso.",
+          icon: "success",
+          confirmButtonText: "OK",
+          customClass: {
+            confirmButton: "btn btn-primary"
+          },
+          buttonsStyling: false
+        });
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        swalWithBootstrapButtons.fire({
+          title: "Cancelado",
+          text: "O item permanece na lista :)",
+          icon: "error",
+          confirmButtonText: "OK",
+          customClass: {
+            confirmButton: "btn btn-primary"
+          },
+          buttonsStyling: false
+        });
+      }
+    });
   };
 
   return (
     <>
-      <div className={style.item} style={{ textDecoration: item.isCompleted ? "line-through" : "" }}>
+      <div
+        className={style.item}
+        style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
+      >
         <div className={style.content}>
-          <p className={style.text}>{item.text}</p>
-          <p className={style.category}>{item.category}</p>
+          <input
+            type="checkbox"
+            checked={item.isCompleted}
+            onChange={(e) => handleConcluir(item.id, e.target.checked)}
+            className={style.checkbox}
+          />
+          <div className={style.textBlock}>
+            <p className={style.text}>{item.text}</p>
+            <p className={style.category}>{item.category}</p>
+          </div>
         </div>
-        <div>
-          <button onClick={() => handleConcluir(item.id)} className={style.complete}>Já Comprei</button>
-          {autenticado && <button onClick={() => handleRemover(item.id)} className={style.remove}>X</button>}
-        </div>
+
+        {autenticado && (
+          <button
+            onClick={() => handleRemover(item.id)}
+            className={style.remove}
+          >
+            X
+          </button>
+        )}
       </div>
 
-      {/* Toast no canto superior direito */}
       <Toast visible={toast.visible} message={toast.message} type={toast.type} position />
     </>
   );
