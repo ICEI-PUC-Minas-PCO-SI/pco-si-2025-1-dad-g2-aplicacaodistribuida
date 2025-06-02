@@ -253,7 +253,7 @@ Atualizado em: 21/04/2024
 | Otávio Soares da Costa     | Classes Front-End para consumo das APIs    | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025                |
 | Pedro Henrique Morais de Assis     | Lista de Compras, Adequações e Liderança Técnica    | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025                |
 | João Vítor de Souza França         | Construção da API e Liderança Técnica  | 01/05/2025     | 23/05/2025 | ✔️     | 23/05/2025                |
-| Jean Estanislau de Souza Guimarães | Construção do Banco de Dados, WebSocket e Liderança  |    01/05/2025        | 23/05/2025 | ✔️    | 21/05/2025      |
+| Jean Estanislau de Souza Guimarães | Construção do Banco de Dados e Liderança  |    01/05/2025        | 23/05/2025 | ✔️    | 21/05/2025      |
 
 
 Legenda:
