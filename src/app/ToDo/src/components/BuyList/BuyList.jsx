@@ -22,7 +22,7 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
     if (checked) {
       const Toast = Swal.mixin({
         toast: true,
-        position: "top-end",
+        position: "top-center",
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true,
@@ -33,7 +33,7 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
       });
       Toast.fire({
         icon: "success",
-        title: "Produto comprado"
+        title: "Produto "+item.text+ " comprado"
       });
     }
   };
@@ -63,7 +63,7 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
 
         swalWithBootstrapButtons.fire({
           title: "Removido!",
-          text: "O item foi removido com sucesso.",
+          text: "O item "+item.text+ " foi removido com sucesso.",
           icon: "success",
           confirmButtonText: "OK",
           customClass: {

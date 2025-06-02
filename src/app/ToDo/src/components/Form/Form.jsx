@@ -31,7 +31,7 @@ const Form = ({ novositens }) => {
     setCategory('');
     const Toast = Swal.mixin({
   toast: true,
-  position: "center",
+  position: "top-center",
   showConfirmButton: false,
   timer: 3000,
   timerProgressBar: true,
