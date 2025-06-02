@@ -34,7 +34,7 @@ export default function ListsPage() {
       if (err.response?.status === 401) {
         navigate('/');
       } else {
-        alert('Nenhuma Lista Cadastrada');
+        console.log('Nenhuma Lista Cadastrada');
       }
       setListas([]);
     } finally {

@@ -6,6 +6,7 @@ import logoImg from './logo.png';
 import profileIcon from './icone.jpg';
 import api from '../../services/api';
 import LoadingModal from '../LoadingModal/LoadingModal';
+import Swal from 'sweetalert2';
 
 const Modal = ({ title, fields, onClose, onSubmit }) => {
   const [values, setValues] = useState(
@@ -74,14 +75,30 @@ const Header = ({ token }) => {
       const res = await api.post('/auth/login', { email, senha });
       const { token: newToken } = res.data;
       localStorage.setItem('token', newToken);
-      window.alert('Bem vindo de volta');
+
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Bem vindo de volta',
+        showConfirmButton: false,
+        timer: 1500
+      });
+
       setShowLogin(false);
-      window.location.reload();
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 1600);
     } catch (err) {
       const msg = err.response?.status === 401
         ? 'Credenciais inválidas'
         : 'Erro ao fazer login';
-      alert(msg);
+
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: msg,
+      });
     } finally {
       setLoading(false);
     }
@@ -93,22 +110,47 @@ const Header = ({ token }) => {
       const res = await api.post('/auth/registro', { nome, email, senha });
       const { token: newToken } = res.data;
       localStorage.setItem('token', newToken);
-      window.alert('Obrigado por criar uma conta');
+
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Obrigado por criar uma conta',
+        showConfirmButton: false,
+        timer: 1500
+      });
+
       setShowRegister(false);
-      window.location.reload();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1600);
     } catch (err) {
       const msg = err.response?.data?.message || 'Erro ao registrar usuário';
-      alert(msg);
+
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: msg,
+      });
     } finally {
       setLoading(false);
     }
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-     window.location.href = '/';
+  localStorage.removeItem('token');
+
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Deslogado com sucesso',
+    showConfirmButton: false,
+    timer: 2000
+  }).then(() => {
+
+    window.location.href = '/';
     window.location.reload();
-  };
+  });
+};
 
   return (
     <>
