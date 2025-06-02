@@ -43,9 +43,14 @@ Tecnologias Utilizadas:
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
 |------|------------------------|------------|-----------------|
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | João | index.html |
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês | Ana Paula | cadastro-noticia.html |
+|RF-001| A aplicação deve permitir que um usuário visualize uma lista de compras mesmo sem autenticar | Pedro Morais | ListaDetalhada.jsx |
+|RF-002| A aplicação deve permitir o cadastro e login pelo próprio usuário, por meio de um email | Igor | Header.jsx |
+|RF-003| A aplicação deve permitir que um usuário visualize uma lista de compras mesmo sem autenticar | Pedro Morais | ListaDetalhada.jsx |
+|RF-004| A aplicação deve permitir que o usuário marque se o item foi comprado, mesmo que não esteja autenticado | Pedro Morais | ListaDetalhada.jsx |
+|RF-007| A aplicação deve permitir copiar a URL da lista em exibição | Gustavo Rafá| ListsPage.jsx |
 
 ### Requisitos Não Atendidos:
 
 - Utilização de WebSocket para Sincronismo, no projeto essa tecnologia não funcionou corretamente, então o grupo decidiu por retirá-lo.
+- RF-005
+- RF-006
