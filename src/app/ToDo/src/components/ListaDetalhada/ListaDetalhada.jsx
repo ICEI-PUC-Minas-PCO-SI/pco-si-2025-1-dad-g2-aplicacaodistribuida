@@ -60,14 +60,17 @@ export default function ListaDetalhada() {
     if (!token) {
       setAuthModalMessage('Faça login para remover itens.');
       setAuthModalVisible(true);
-      return setTimeout(() => setAuthModalVisible(false), 1500);
+      setTimeout(() => setAuthModalVisible(false), 1500);
+      return false;
     }
     try {
       await api.delete('/produtos/deletar', { ...config, data: { codigoLista: codigo, idProduto: id } });
       setItens(prev => prev.filter(item => item.id !== id));
     } catch (err) {
       console.error('Erro ao remover item:', err);
+      return false;
     }
+    return true;
   };
 
   const concluirItem = async id => {
@@ -97,6 +100,7 @@ export default function ListaDetalhada() {
               item={item}
               removeritem={removerItem}
               concluirItem={concluirItem}
+              autenticado={(token != null && token != "")}
             />
           ))}
         {token && <Form novositens={adicionarItem} />}

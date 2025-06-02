@@ -2,7 +2,7 @@ import { useState } from 'react';
 import style from './BuyList.module.css';
 import Toast from '../Toast/Toast'; 
 
-const BuyList = ({ item, removeritem, concluirItem }) => {
+const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
   const [toast, setToast] = useState({ visible: false, message: '', type: '' });
 
   const mostrarToast = (message, type) => {
@@ -17,8 +17,9 @@ const BuyList = ({ item, removeritem, concluirItem }) => {
     mostrarToast("Produto comprado", "info");
   };
 
-  const handleRemover = id => {
-    removeritem(id);
+  const handleRemover = async id => {
+    var success = await removeritem(id);
+    if (!success) return;
     mostrarToast("Item removido da lista!", "warning");
   };
 
@@ -31,7 +32,7 @@ const BuyList = ({ item, removeritem, concluirItem }) => {
         </div>
         <div>
           <button onClick={() => handleConcluir(item.id)} className={style.complete}>Já Comprei</button>
-          <button onClick={() => handleRemover(item.id)} className={style.remove}>X</button>
+          {autenticado && <button onClick={() => handleRemover(item.id)} className={style.remove}>X</button>}
         </div>
       </div>
 
