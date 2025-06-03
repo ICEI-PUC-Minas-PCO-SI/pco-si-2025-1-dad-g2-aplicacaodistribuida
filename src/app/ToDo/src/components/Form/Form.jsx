@@ -5,14 +5,7 @@ import Swal from 'sweetalert2';
 const Form = ({ novositens }) => {
   const [value, setValue] = useState('');
   const [category, setCategory] = useState('');
-  const [toast, setToast] = useState({ visible: false, message: '', type: '' });
 
-  const mostrarToast = (message, type) => {
-    setToast({ visible: true, message, type });
-    setTimeout(() => {
-      setToast({ visible: false, message: '', type: '' });
-    }, 3000);
-  };
 
   const funcenvio = e => {
     e.preventDefault();
@@ -72,8 +65,6 @@ Toast.fire({
         </select>
         <button type="submit">Adicionar a Lista</button>
       </form>
-
-      <Toast visible={toast.visible} message={toast.message} type={toast.type} />
     </div>
   );
 };
