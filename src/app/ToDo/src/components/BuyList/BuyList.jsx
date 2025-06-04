@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import style from './BuyList.module.css';
-import Toast from '../Toast/Toast'; 
 import Swal from 'sweetalert2';
+import Toast from '../Toast/Toast';
 
 const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
   const [toast, setToast] = useState({ visible: false, message: '', type: '' });
@@ -10,30 +10,26 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
     setToast({ visible: true, message, type });
     setTimeout(() => {
       setToast({ visible: false, message: '', type: '' });
-    }, 3500); 
+    }, 3500);
   };
 
-  // Novo handleConcluir que recebe checked
   const handleConcluir = (id, checked) => {
-    // Atualiza o estado no componente pai (inverte item.isCompleted)
     concluirItem(id);
-
-    // Só exibe o toast do Swal quando estiver marcando
     if (checked) {
-      const Toast = Swal.mixin({
+      const ToastSwal = Swal.mixin({
         toast: true,
-        position: "top-center",
+        position: 'top-center',
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true,
         didOpen: (toastElem) => {
           toastElem.onmouseenter = Swal.stopTimer;
           toastElem.onmouseleave = Swal.resumeTimer;
-        }
+        },
       });
-      Toast.fire({
-        icon: "success",
-        title: "Produto "+item.text+ " comprado"
+      ToastSwal.fire({
+        icon: 'success',
+        title: `Produto "${item.nome}" comprado`,
       });
     }
   };
@@ -41,80 +37,106 @@ const BuyList = ({ item, removeritem, concluirItem, autenticado }) => {
   const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
       confirmButton: 'btn btn-success',
-      cancelButton: 'btn btn-danger'
+      cancelButton: 'btn btn-danger',
     },
-    buttonsStyling: false
+    buttonsStyling: false,
   });
 
-  const handleRemover = id => {
-    swalWithBootstrapButtons.fire({
-      title: "Tem certeza?",
-      text: "Você não poderá reverter isso!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonText: "Sim, remover!",
-      cancelButtonText: "Não, cancelar!",
-      reverseButtons: true
-    }).then(async (result) => {
-      if (result.isConfirmed) {
-        const success = await removeritem(id);
-        if (!success) return;
-        mostrarToast("Item removido da lista!", "warning");
+  const handleRemover = (id) => {
+    swalWithBootstrapButtons
+      .fire({
+        title: 'Tem certeza?',
+        text: 'Você não poderá reverter isso!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sim, remover!',
+        cancelButtonText: 'Não, cancelar!',
+        reverseButtons: true,
+      })
+      .then(async (result) => {
+        if (result.isConfirmed) {
+          const success = await removeritem(id);
+          if (!success) return;
+          mostrarToast('Item removido da lista!', 'warning');
 
-        swalWithBootstrapButtons.fire({
-          title: "Removido!",
-          text: "O item "+item.text+ " foi removido com sucesso.",
-          icon: "success",
-          confirmButtonText: "OK",
-          customClass: {
-            confirmButton: "btn btn-primary"
-          },
-          buttonsStyling: false
-        });
-      } else if (result.dismiss === Swal.DismissReason.cancel) {
-        swalWithBootstrapButtons.fire({
-          title: "Cancelado",
-          text: "O item permanece na lista :)",
-          icon: "error",
-          confirmButtonText: "OK",
-          customClass: {
-            confirmButton: "btn btn-primary"
-          },
-          buttonsStyling: false
-        });
-      }
-    });
+          swalWithBootstrapButtons.fire({
+            title: 'Removido!',
+            text: `O item "${item.nome}" foi removido com sucesso.`,
+            icon: 'success',
+            confirmButtonText: 'OK',
+            customClass: {
+              confirmButton: 'btn btn-primary',
+            },
+            buttonsStyling: false,
+          });
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          swalWithBootstrapButtons.fire({
+            title: 'Cancelado',
+            text: 'O item permanece na lista :)',
+            icon: 'error',
+            confirmButtonText: 'OK',
+            customClass: {
+              confirmButton: 'btn btn-primary',
+            },
+            buttonsStyling: false,
+          });
+        }
+      });
   };
 
   return (
     <>
       <div
-        className={style.item}
-        style={{ textDecoration: item.isCompleted ? "line-through" : "" }}
+        className={`${style.item} ${
+          item.flagComprado ? style.comprado : ''
+        }`}
       >
-        <div className={style.content}>
-          <input
-            type="checkbox"
-            checked={item.isCompleted}
-            onChange={(e) => handleConcluir(item.id, e.target.checked)}
-            className={style.checkbox}
-          />
-          <div className={style.textBlock}>
-            <p className={style.text}>{item.text}</p>
-            <p className={style.category}>{item.category}</p>
+        {/* Checkbox à esquerda */}
+        <input
+          type="checkbox"
+          checked={item.flagComprado}
+          onChange={(e) => handleConcluir(item.id, e.target.checked)}
+          className={style.checkbox}
+        />
+
+        {/* Conteúdo textual */}
+        <div className={style.info}>
+          {/* Linha 1: Nome + Badge de categoria */}
+          <div className={style.row1}>
+            <span className={style.nome}>{item.nome}</span>
+            <span className={style.badge}>{item.categoria}</span>
+          </div>
+
+          {/* Linha 2: Detalhes em formato compacto */}
+          <div className={style.row2}>
+            <span className={style.detail}>
+              <strong>Qtd:</strong> {item.quantidade}
+            </span>
+            <span className={style.detail}>
+              <strong>Valor:</strong> R$ {item.valor.toFixed(2)}
+            </span>
+            <span className={style.detail}>
+              <strong>Medida:</strong> {item.medida || '—'}
+            </span>
+            <span className={style.detail}>
+              <strong>Local:</strong> {item.localSugerido || '—'}
+            </span>
           </div>
         </div>
 
+        {/* Botão de remover (se autenticado) */}
         {autenticado && (
           <button
             onClick={() => handleRemover(item.id)}
             className={style.remove}
+            title="Remover item"
           >
-            X
+            &times;
           </button>
         )}
       </div>
 
+      {/* Toast de notificação */}
       <Toast visible={toast.visible} message={toast.message} type={toast.type} position />
     </>
   );
