@@ -32,11 +32,17 @@ RF09	Deletar uma lista inexistente	Código inválido + token	Status 404, mensage
 RF10	Criar lista sem autenticação	Nome da lista, sem token	Status 401, acesso negado
 
 🔹 1.3 Gerenciamento de Produtos
+
 ID	Caso de Teste	Entrada	Resultado Esperado
+
 RF11	Adicionar produto a uma lista	Nome, quantidade, código da lista	Status 200, código do produto retornado
+
 RF12	Listar produtos de uma lista	Código da lista	Status 200, array de produtos retornado
+
 RF13	Deletar um produto da lista	Código do produto	Status 200, confirmação de remoção
+
 RF14	Adicionar produto com lista inexistente	Código inválido	Status 404, erro de lista não encontrada
+
 RF15	Deletar produto inexistente	Código de produto inválido	Status 404, erro ao excluir
 
 ✅ 2. Casos de Teste – Requisitos Não Funcionais
