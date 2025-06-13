@@ -3,6 +3,7 @@
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
 
 1. Casos de Teste – Requisitos Funcionais
+   
 🔹 1.1 Autenticação
 ID	Caso de Teste	Entrada	Resultado Esperado
 
