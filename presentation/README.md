@@ -28,7 +28,7 @@ Como Design básico o grupo adotou uma palheta de cores simples baseadas em Cinz
 
 Conjunto de slides presente em: 
 
-![arq](./CompraSync.pdf)
+https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/ca57cce716293d82f93bc51bbff3c49d9d6e8bf2/presentation/CompraSync.pdf
 
 ## Vídeo de demonstração
 
