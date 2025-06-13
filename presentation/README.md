@@ -18,7 +18,7 @@ CompraSync
 
 Para o site CompraSync a seguinte logo foi projetada: 
 
-
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/c3fa9c31489499a849b8be973b5679ef2498b9c2/docs/img/logo_comprasync.png)
 
 ## Conjunto de Slides (Estrutura)
 
