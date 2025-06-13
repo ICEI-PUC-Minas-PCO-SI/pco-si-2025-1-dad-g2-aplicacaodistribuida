@@ -280,7 +280,7 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 |-------------------------------------|------------------------------------|----------------------------------------|
 | Repositório de código fonte         | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/tree/f59d743725ec478aa12f011d81ded8c67019a52a/src)                            |
 | Documentos do projeto               | GitHub                             | [http://....](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/dc4e0ff1a719d657c21395cbcc5da0c8d49bb16e/docs/especification.md)                            |
-| Projeto de interface                | Figma (Não Iniciado)               | http://....                            |
+| Projeto de interface                | Figma (Não Iniciado)               | [http://....](https://www.figma.com/design/gW0AlEZYBl3BrteYgMwOfU/CompraSync?node-id=0-1&p=f)                            |
 | Gerenciamento do projeto            | GitHub Projects                    | [http://....](https://github.com/orgs/ICEI-PUC-Minas-PCO-SI/projects/83/views/1)                            |
 | Hospedagem                          | Vercel em conjunto com Render      | [http://....](https://comprasync.vercel.app/#/)                            |
  
