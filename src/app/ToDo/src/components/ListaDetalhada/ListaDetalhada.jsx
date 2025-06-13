@@ -1,4 +1,3 @@
-// src/components/ListaDetalhada/ListaDetalhada.jsx
 import { useEffect, useState, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Search from '../Search/Search';
@@ -37,7 +36,6 @@ export default function ListaDetalhada() {
       const prevRawString = prevRaw ? JSON.stringify(prevRaw) : null;
 
       if (prevRaw && rawString !== prevRawString) {
-        // itera para mostrar toasts de REMOÇÃO ou ALTERAÇÃO de flagComprado
         const prevMap = {};
         prevRaw.forEach((prod) => {
           prevMap[prod.id] = prod;
@@ -47,7 +45,7 @@ export default function ListaDetalhada() {
           newMap[prod.id] = prod;
         });
 
-        // 1) Itens removidos
+        // Itens removidos
         prevRaw.forEach((prodPrev) => {
           if (!newMap[prodPrev.id]) {
             Swal.fire({
@@ -60,7 +58,7 @@ export default function ListaDetalhada() {
           }
         });
 
-        // 2) Itens marcados/desmarcados como comprados
+        // Itens marcados/desmarcados como comprados
         prevRaw.forEach((prodPrev) => {
           const prodNew = newMap[prodPrev.id];
           if (prodNew && prodPrev.flagComprado !== prodNew.flagComprado) {
@@ -78,32 +76,35 @@ export default function ListaDetalhada() {
         });
       }
 
-      if (!prevRaw || rawString !== prevRawString) {
-        prevRawDataRef.current = rawData;
+      prevRawDataRef.current = rawData;
 
-        // Formata para o estado local apenas os campos necessários para renderizar o card.
-        // Mas vamos guardar TODO o objeto, para poder exibir todos os campos.
-        const produtosFormatados = rawData.map((prod) => ({
-          id: prod.id,
-          nome: prod.nome,
-          categoria: prod.categoria,
-          quantidade: prod.quantidade,
-          valor: prod.valor,
-          medida: prod.medida,
-          localSugerido: prod.localSugerido,
-          flagComprado: prod.flagComprado,
-        }));
-        setItens(produtosFormatados);
-      }
+      const produtosFormatados = rawData.map((prod) => ({
+        id: prod.id,
+        nome: prod.nome,
+        categoria: prod.categoria,
+        quantidade: prod.quantidade,
+        valor: prod.valor,
+        medida: prod.medida,
+        localSugerido: prod.localSugerido,
+        flagComprado: prod.flagComprado,
+      }));
+      setItens(produtosFormatados);
     } catch (err) {
-      if (err.response && err.response.status === 404) {
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'Lista não existe',
-        });
-        navigate('/');
-        return;
+      if (err.response && (err.response.status === 404 || err.response.status === 401)) {
+        // Lista vazia ou não encontrada, mas não deslogamos o usuário
+        if (prevRawDataRef.current && prevRawDataRef.current.length > 0) {
+          prevRawDataRef.current.forEach((prod) => {
+            Swal.fire({
+              icon: 'info',
+              title: 'Item removido',
+              text: `O item "${prod.nome}" foi removido.`,
+              timer: 2500,
+              showConfirmButton: false,
+            });
+          });
+        }
+        prevRawDataRef.current = [];
+        setItens([]);
       } else {
         console.error('Erro ao buscar produtos:', err);
       }
@@ -130,7 +131,6 @@ export default function ListaDetalhada() {
     return () => clearInterval(intervalId);
   }, [codigo, navigate]);
 
-  // ======= alteração principal: receber um objeto com TODOS os campos =======
   const adicionarItem = async (itemDados) => {
     if (!token) {
       setAuthModalMessage('Faça login para adicionar itens.');
@@ -139,8 +139,6 @@ export default function ListaDetalhada() {
       return;
     }
     try {
-      // itemDados já é algo como:
-      // { nome, categoria, quantidade, valor, medida, localSugerido, flagComprado }
       const body = {
         codigoLista: codigo,
         nome: itemDados.nome,
@@ -154,11 +152,10 @@ export default function ListaDetalhada() {
 
       const res = await api.post('/produtos/criar', body, config);
 
-      // Assim que a API retornar, fazemos update local imediato
       setItens((prev) => [
         ...prev,
         {
-          id: res.data.idProduto, // assumindo que a API retorna idProduto
+          id: res.data.idProduto,
           nome: itemDados.nome,
           categoria: itemDados.categoria,
           quantidade: itemDados.quantidade,
