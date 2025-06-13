@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/8a97cfa0-8acd-4cc1-b9b5-e931b37fa1b3)![image](https://github.com/user-attachments/assets/37a76acf-ecf5-452e-a593-310f305b7a35)## Testes
-
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
