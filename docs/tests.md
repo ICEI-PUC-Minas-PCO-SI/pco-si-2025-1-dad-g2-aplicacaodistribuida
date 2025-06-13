@@ -111,6 +111,17 @@ Tentando deletar um produto de uma lista que existe mas o produto não
 Tentando deletar um produto com código existente em uma lista que não existe
 ![image](https://github.com/user-attachments/assets/808d9594-63d1-4713-a61c-1390443a1977)
 
-4. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-5. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-6. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
+Etapa	Requisição
+![image](https://github.com/user-attachments/assets/2f358f6f-bf52-4de8-9fa8-61c0deea9007)
+
+
+4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
+Teste de carga realizado com o Newman, foi realizado um teste de carga baixa de 10 interações e um teste de carga um pouco mais alta de 50 interações.
+10 Interações
+![image](https://github.com/user-attachments/assets/b7365a4c-768f-4af1-983b-5d8e62300883)
+
+50 Interações
+![image](https://github.com/user-attachments/assets/3c16cdeb-56dc-4cf6-96e0-47ace809b3fe)
+
+
