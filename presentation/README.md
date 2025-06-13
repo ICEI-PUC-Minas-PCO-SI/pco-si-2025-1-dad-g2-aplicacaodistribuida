@@ -5,7 +5,7 @@ Faça uma apresentação de um resumo de todos o processo de desenvolvimento e n
 Liste os arquivos produzidos e postados nesta pasta, com suas localizaçãoes e descrição do conteúdo neste arquivo Readme.md.
 
 
-* [Apresentação final](./CompraSync.pdf) -- arquivo com os slides da apresentação final
+* [Apresentação final](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/7341c58351e8dd833b48caefda721624b777048f/presentation/CompraSync%20(2).pdf) -- arquivo com os slides da apresentação final
 * Vídeo de demonstração-- [arquivo com a demonstração do funcionamento do sistema](https://youtu.be/qCrcKJ_VH0Q)
 
 O conjunto de slides deve ser apresentado em um arquivo PowerPoint ou PDF. A apresentação do projeto deve contemplar todos os itens trabalhados nos demais artefatos. Alguns aspectos que devem ser contemplados na apresentação são listados a seguir.
@@ -28,7 +28,7 @@ Como Design básico o grupo adotou uma palheta de cores simples baseadas em Cinz
 
 Conjunto de slides presente em: 
 
-https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/ca57cce716293d82f93bc51bbff3c49d9d6e8bf2/presentation/CompraSync.pdf
+https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/7341c58351e8dd833b48caefda721624b777048f/presentation/CompraSync%20(2).pdf
 
 ## Vídeo de demonstração
 
