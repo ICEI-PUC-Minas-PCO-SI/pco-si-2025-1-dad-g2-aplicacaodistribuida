@@ -89,6 +89,7 @@ RNF10	Código com testes automatizados	Executar testes com Newman ou Jest	Todos 
 
 RNF11	API documentada	Swagger ou Postman documentado	Desenvolvedores conseguem testar sem auxílio adicional
 
+
 2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
 
 Registrando Usuário
@@ -144,6 +145,7 @@ Tentando deletar um produto de uma lista que existe mas o produto não
 
 Tentando deletar um produto com código existente em uma lista que não existe
 ![image](https://github.com/user-attachments/assets/808d9594-63d1-4713-a61c-1390443a1977)
+
 
 3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
 Etapa	Requisição
