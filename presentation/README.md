@@ -20,6 +20,10 @@ Para o site CompraSync a seguinte logo foi projetada:
 
 ![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/c3fa9c31489499a849b8be973b5679ef2498b9c2/docs/img/logo_comprasync.png)
 
+Como Design básico o grupo adotou uma palheta de cores simples baseadas em Cinza, Branco e Preto com elementos visuais minimalistas, decisões tomadas para uma maior simplicidade na utilização da aplicação:
+
+![arq](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2025-1-dad-g2-aplicacaodistribuida/blob/c2a13340574b8dd36741c3dda17c05f3c1947c4e/docs/img/design_basico_comprasync.png)
+
 ## Conjunto de Slides (Estrutura)
 
 O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos. Os arquivos devem ser postados na pasta [presentation](../presentation)
