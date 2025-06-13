@@ -5,10 +5,15 @@
 1. Casos de Teste – Requisitos Funcionais
 🔹 1.1 Autenticação
 ID	Caso de Teste	Entrada	Resultado Esperado
+
 RF01	Registrar novo usuário	Nome, e-mail e senha válidos	Status 200, usuário registrado
+
 RF02	Registrar com e-mail já usado	Mesmo e-mail de usuário existente	Status 400, erro de duplicidade
+
 RF03	Login com credenciais válidas	E-mail e senha corretos	Status 200, token JWT retornado
+
 RF04	Login com senha inválida	E-mail correto, senha errada	Status 401, mensagem de erro
+
 RF05	Login com usuário inexistente	E-mail não cadastrado	Status 404, mensagem de erro
 
 🔹 1.2 Gerenciamento de Lista de Compras
