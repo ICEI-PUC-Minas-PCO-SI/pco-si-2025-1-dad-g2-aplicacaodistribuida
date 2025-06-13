@@ -2,7 +2,7 @@
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
 
-1. Casos de Teste – Requisitos Funcionais
+Casos de Teste – Requisitos Funcionais
    
 🔹 1.1 Autenticação
 ID	Caso de Teste	Entrada	Resultado Esperado
@@ -18,11 +18,17 @@ RF04	Login com senha inválida	E-mail correto, senha errada	Status 401, mensagem
 RF05	Login com usuário inexistente	E-mail não cadastrado	Status 404, mensagem de erro
 
 🔹 1.2 Gerenciamento de Lista de Compras
+
 ID	Caso de Teste	Entrada	Resultado Esperado
+
 RF06	Criar nova lista de compras	Nome da lista + token válido	Status 200, código da lista retornado
+
 RF07	Listar todas as listas do usuário	Token válido	Status 200, array de listas retornado
+
 RF08	Deletar uma lista existente	Código da lista + token válido	Status 200, confirmação de remoção
+
 RF09	Deletar uma lista inexistente	Código inválido + token	Status 404, mensagem de erro
+
 RF10	Criar lista sem autenticação	Nome da lista, sem token	Status 401, acesso negado
 
 🔹 1.3 Gerenciamento de Produtos
@@ -34,30 +40,47 @@ RF14	Adicionar produto com lista inexistente	Código inválido	Status 404, erro 
 RF15	Deletar produto inexistente	Código de produto inválido	Status 404, erro ao excluir
 
 ✅ 2. Casos de Teste – Requisitos Não Funcionais
+
 🔹 2.1 Segurança
+
 ID	Caso de Teste	Descrição	Resultado Esperado
+
 RNF01	API só acessível com token JWT válido	Enviar requisição com token expirado	Status 401, mensagem de token inválido
+
 RNF02	Senha armazenada com hash seguro	Registrar e verificar hash no banco	Senha não armazenada em texto puro
+
 RNF03	Prevenção contra SQL Injection	Input com ' OR '1'='1	API deve tratar e não executar consulta maliciosa
 
 🔹 2.2 Usabilidade
+
 ID	Caso de Teste	Descrição	Resultado Esperado
+
 RNF04	Interface com mensagens claras	Campos obrigatórios não preenchidos	Mensagem clara: “Preencha o campo X”
+
 RNF05	Fluxo lógico do usuário	Registro → Login → Criar lista → Adicionar produto	Navegação sem falhas e com retorno coerente
 
 🔹 2.3 Performance
+
 ID	Caso de Teste	Descrição	Resultado Esperado
+
 RNF06	Tempo de resposta da API	Todas as requisições abaixo de 1 segundo	95% dos casos ≤ 1s
+
 RNF07	Teste de carga moderada	100 requisições simultâneas de login	API responde corretamente sem travar
 
 🔹 2.4 Escalabilidade e Confiabilidade
+
 ID	Caso de Teste	Descrição	Resultado Esperado
+
 RNF08	Vários usuários acessando simultaneamente	Registro de 50 usuários em sequência	Nenhum erro de concorrência
+
 RNF09	Persistência de dados	Criar lista e reiniciar API	Dados continuam disponíveis
 
 🔹 2.5 Manutenibilidade e Testabilidade
+
 ID	Caso de Teste	Descrição	Resultado Esperado
+
 RNF10	Código com testes automatizados	Executar testes com Newman ou Jest	Todos os testes devem passar
+
 RNF11	API documentada	Swagger ou Postman documentado	Desenvolvedores conseguem testar sem auxílio adicional
 
 2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
