@@ -1,7 +1,8 @@
 [Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
 
 1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-  ✅ 1. Casos de Teste – Requisitos Funcionais
+
+1. Casos de Teste – Requisitos Funcionais
 🔹 1.1 Autenticação
 ID	Caso de Teste	Entrada	Resultado Esperado
 RF01	Registrar novo usuário	Nome, e-mail e senha válidos	Status 200, usuário registrado
