@@ -249,7 +249,7 @@ Atualizado em: 21/04/2024
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Igor Alvarenga Nunes de Brito      | Páginas de Login e Registro | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025      |
-| Gustavo Rafá Pinheiro da Silva     | Menu de Listas de Compras    | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025                |
+| Gustavo Rafá Pinheiro da Silva     | Menu de Listas de Compras e Criação de Casos de Teste    | 01/05/2025     | 12/06/2025 | ✔️    | 12/06/2025                |
 | Otávio Soares da Costa     | Classes Front-End para consumo das APIs    | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025                |
 | Pedro Henrique Morais de Assis     | Lista de Compras, Adequações e Liderança Técnica    | 01/05/2025     | 23/05/2025 | ✔️    | 23/05/2025                |
 | João Vítor de Souza França         | Construção da API e Liderança Técnica  | 01/05/2025     | 23/05/2025 | ✔️     | 23/05/2025                |
