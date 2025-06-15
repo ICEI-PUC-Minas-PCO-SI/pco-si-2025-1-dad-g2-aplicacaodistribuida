@@ -54,3 +54,147 @@ Tecnologias Utilizadas:
 - Utilização de WebSocket para Sincronismo, no projeto essa tecnologia não funcionou corretamente, então o grupo decidiu por retirá-lo.
 - RF-005
 - RF-006
+
+# API RESTful - Backend
+
+API RESTful desenvolvida em **ASP.NET Core** para gerenciamento de listas de compras, produtos e usuários. Permite que usuários autenticados criem, atualizem, excluam e consultem listas de compras e produtos associados, além de gerenciar suas próprias contas.
+
+---
+
+## Sumário
+
+- [Estrutura dos Controllers](#estrutura-dos-controllers)
+  - [ProdutosController](#produtoscontroller)
+  - [ListaComprasController](#listacomprascontroller)
+  - [UsuariosController](#usuarioscontroller)
+- [Autenticação](#autenticação)
+- [Tratamento de Erros](#tratamento-de-erros)
+- [DTOs Utilizados](#dtos-utilizados)
+- [Observações Técnicas](#observações-técnicas)
+- [Fluxo Básico de Uso](#fluxo-básico-de-uso)
+- [Considerações Finais](#considerações-finais)
+
+---
+
+## Estrutura dos Controllers
+
+### ProdutosController
+
+Responsável pelo CRUD de produtos dentro de uma lista de compras.
+
+#### Endpoints
+
+- **POST /criar**  
+  Cria um novo produto em uma lista de compras existente.  
+  - **Request:** `CriarProdutoRequestDTO`  
+  - **Response:** `CriarProdutoResponseDTO` com o código da lista e o ID do produto criado.  
+  - **Erros:** Lista não encontrada, erro ao criar produto.
+
+- **PUT /atualizar**  
+  Atualiza os dados de um produto existente.  
+  - **Request:** `AtualizarProdutoRequestDTO`  
+  - **Response:** `200 OK` em caso de sucesso.  
+  - **Erros:** Lista ou produto não encontrado, erro ao atualizar.
+
+- **DELETE /deletar**  
+  Remove um produto de uma lista de compras.  
+  - **Request:** `DeletarProdutoRequestDTO`  
+  - **Response:** `200 OK` em caso de sucesso.  
+  - **Erros:** Lista ou produto não encontrado, erro ao deletar.
+
+> **Observação:**  
+> Os métodos buscam a lista pelo código e o produto pelo ID.  
+> Há comentários para futura implementação de validação do usuário autenticado.
+
+---
+
+### ListaComprasController
+
+Gerencia as listas de compras dos usuários.
+
+#### Endpoints
+
+- **PUT /atualizar**  
+  Atualiza nome e descrição de uma lista de compras.  
+  - **Request:** `AtualizarListaComprasRequestDTO`  
+  - **Response:** `200 OK` ou mensagem de que nada foi alterado.  
+  - **Erros:** Lista não encontrada, não pertence ao usuário, erro ao atualizar.
+
+- **DELETE /deletar**  
+  Exclui uma lista de compras.  
+  - **Request:** `DeletarListaComprasRequestDTO`  
+  - **Response:** `200 OK` em caso de sucesso.  
+  - **Erros:** Lista não encontrada, não pertence ao usuário, erro ao deletar.
+
+> **Observação:**  
+> Sempre valida se a lista pertence ao usuário autenticado antes de permitir alterações ou exclusão.
+
+---
+
+### UsuariosController
+
+Gerencia operações relacionadas ao usuário autenticado.
+
+#### Endpoints
+
+- **DELETE /deletar**  
+  Exclui o usuário autenticado.  
+  - **Request:** Nenhum parâmetro.  
+  - **Response:** `200 OK` em caso de sucesso.  
+  - **Erros:** Usuário não encontrado, erro ao deletar.
+
+---
+
+## Autenticação
+
+- Todos os endpoints são protegidos por `[Authorize]`.
+- O ID do usuário é extraído do token JWT via `_tokenService.GetUserIdFromToken(User)`.
+- Algumas validações de usuário estão comentadas nos métodos de produtos, mas implementadas nos métodos de listas e usuários.
+
+---
+
+## Tratamento de Erros
+
+- Retorna mensagens específicas para:
+  - Erros de autenticação
+  - Autorização
+  - Não encontrado
+  - Falhas de banco de dados
+- Utiliza **DTOs de resposta** para padronizar mensagens.
+
+---
+
+## DTOs Utilizados
+
+- `CriarProdutoRequestDTO`, `CriarProdutoResponseDTO`
+- `AtualizarProdutoRequestDTO`
+- `DeletarProdutoRequestDTO`
+- `AtualizarListaComprasRequestDTO`
+- `DeletarListaComprasRequestDTO`
+- `MessageResponseDTO`
+
+---
+
+## Observações Técnicas
+
+- Utiliza **Entity Framework Core** para acesso ao banco de dados.
+- Entidades principais: `Usuarios`, `ListaCompras`, `Produto`.
+- Relacionamento entre listas e produtos via navegação e foreign key.
+- Código preparado para futuras melhorias de segurança e validação.
+
+---
+
+## Fluxo Básico de Uso
+
+1. Usuário se autentica e obtém um token JWT.
+2. Cria uma lista de compras.
+3. Adiciona, atualiza ou remove produtos da lista.
+4. Pode atualizar ou excluir a lista.
+5. Pode excluir sua própria conta.
+
+---
+
+## Considerações Finais
+
+API adequada para aplicações de controle de listas de compras, com foco em segurança, organização e facilidade de uso para o usuário final.  
+O código está estruturado para facilitar manutenção e expansão futura.
