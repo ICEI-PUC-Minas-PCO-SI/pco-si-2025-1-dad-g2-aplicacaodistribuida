@@ -198,3 +198,37 @@ Gerencia operações relacionadas ao usuário autenticado.
 
 API adequada para aplicações de controle de listas de compras, com foco em segurança, organização e facilidade de uso para o usuário final.  
 O código está estruturado para facilitar manutenção e expansão futura.
+
+## 🚀 Desenvolvimento do Front‑end
+
+O front‑end da aplicação foi construído em **React**, consumindo nossa API RESTful em ASP.NET Core. Abaixo um breve passo a passo do processo:
+
+1. **Wireframes e Protótipos**  
+   - Iniciamos pelo desenho das telas em Figma, documentando as três principais views:  
+     - **Tela Inicial**: acesso à home e busca por código de lista  
+     - **Lista sem Login**: visualização de itens, sem ações de CRUD  
+     - **Lista com Login**: adição, edição e marcação de itens  
+   - As imagens dos wireframes foram incluídas na pasta `/docs/img/`.
+
+2. **Estrutura de Pastas e Componentes**  
+   - `src/`  
+     - `components/`  
+       - `HomePage/` — paginação inicial e formulário de login  
+       - `Header/` e `Footer/` — layout fixo em todas as telas  
+       - `ListaDetalhada/` — componente principal com polling a cada 3 s  
+       - `ListsPage/` — listagem de todas as listas do usuário  
+       - `Search/`, `BuyList/`, `Form/`, `LoadingModal/`, etc.  
+     - `services/api.ts` — instância do Axios configurada com baseURL e interceptors de autenticação  
+     - `App.tsx` — definição das rotas e leitura de token em LocalStorage  
+
+3. **Consumo de API e Polling**  
+   - Utilizamos `useEffect` com `setInterval` para atualizar a lista a cada 3 segundos, detectando alterações e exibindo notificações via SweetAlert2.  
+   - Todo acesso autenticado passa o JWT no header `Authorization: Bearer <token>`.
+
+4. **Gerenciamento de Estado**  
+   - Hooks React (`useState`, `useRef`) para armazenar itens, loading, mensagens de autenticação e controle de formulários.  
+   - Comparamos o estado anterior (`prevRawDataRef`) com os novos dados para disparar alertas de remoção ou mudança de status.
+
+5. **Deploy Contínuo**  
+   - Hospedagem do front‑end no **Vercel**, com preview automático a cada push na branch `main`.  
+   - Integração básica com ESLint e Prettier, garantindo consistência de código.
